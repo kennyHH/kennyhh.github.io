@@ -31,7 +31,7 @@ In this challenge we have to find IP of the attacker using files access.log and 
 <meta name="application-name" content="My cool site">
 <meta name="apple-mobile-web-app-title" content="My cool site"><meta name="theme-color" content="#ffffff"><meta name="msapplication-TileColor" content="#da532c"><link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
         <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5"><link rel="manifest" href="/site.webmanifest"><link rel="canonical" href="http://kennyh.github.io/deadfaceforensics/" /><link rel="stylesheet" href="/css/style.min.css"><link rel="preload" href="/lib/fontawesome-free/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5"><link rel="manifest" href="/site.webmanifest"><link rel="canonical" href="http://kennyh.github.io/deadfaceforensics/" /><link rel="next" href="http://kennyh.github.io/deadfacestego/" /><link rel="stylesheet" href="/css/style.min.css"><link rel="preload" href="/lib/fontawesome-free/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
         <noscript><link rel="stylesheet" href="/lib/fontawesome-free/all.min.css"></noscript><link rel="preload" href="/lib/animate/animate.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
         <noscript><link rel="stylesheet" href="/lib/animate/animate.min.css"></noscript><script type="application/ld+json">
     {
@@ -42,7 +42,7 @@ In this challenge we have to find IP of the attacker using files access.log and 
         "mainEntityOfPage": {
             "@type": "WebPage",
             "@id": "http:\/\/kennyh.github.io\/deadfaceforensics\/"
-        },"genre": "posts","wordcount":  424 ,
+        },"genre": "posts","wordcount":  440 ,
         "url": "http:\/\/kennyh.github.io\/deadfaceforensics\/","datePublished": "2022-10-17T11:52:40-04:00","dateModified": "2022-10-17T11:52:40-04:00","publisher": {
             "@type": "Organization",
             "name": ""},"author": {
@@ -56,7 +56,7 @@ In this challenge we have to find IP of the attacker using files access.log and 
         <div id="mask"></div><div class="wrapper"><header class="desktop" id="header-desktop">
     <div class="header-wrapper">
         <div class="header-title">
-            <a href="/" title="KennyH Blog"></a>
+            <a href="/" title="KennyH Blog">KennyH Blog</a>
         </div>
         <div class="menu">
             <div class="menu-inner"><a class="menu-item" href="/posts/"> Posts </a><a class="menu-item" href="/tags/"> Tags </a><a class="menu-item" href="/categories/"> Categories </a><span class="menu-item delimiter"></span><span class="menu-item search" id="search-desktop">
@@ -79,7 +79,7 @@ In this challenge we have to find IP of the attacker using files access.log and 
     <div class="header-container">
         <div class="header-wrapper">
             <div class="header-title">
-                <a href="/" title="KennyH Blog"></a>
+                <a href="/" title="KennyH Blog">KennyH Blog</a>
             </div>
             <div class="menu-toggle" id="menu-toggle-mobile">
                 <span></span><span></span><span></span>
@@ -116,9 +116,9 @@ In this challenge we have to find IP of the attacker using files access.log and 
             <div class="toc-content" id="toc-content-auto"></div>
         </div><article class="page single"><h1 class="single-title animate__animated animate__flipInX">DeadFace 2022 Forensics</h1><div class="post-meta">
             <div class="post-meta-line"><span class="post-author"><a href="/" title="Author" rel="author" class="author"><i class="fas fa-user-circle fa-fw" aria-hidden="true"></i>KennyH</a></span>&nbsp;<span class="post-category">included in <a href="/categories/deadface2022/"><i class="far fa-folder fa-fw" aria-hidden="true"></i>DeadFace2022</a></span></div>
-            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw" aria-hidden="true"></i>&nbsp;<time datetime="2022-10-17">2022-10-17</time>&nbsp;<i class="fas fa-pencil-alt fa-fw" aria-hidden="true"></i>&nbsp;424 words&nbsp;
-                <i class="far fa-clock fa-fw" aria-hidden="true"></i>&nbsp;2 minutes&nbsp;</div>
-        </div><div class="details toc" id="toc-static"  data-kept="true">
+            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw" aria-hidden="true"></i>&nbsp;<time datetime="2022-10-17">2022-10-17</time>&nbsp;<i class="fas fa-pencil-alt fa-fw" aria-hidden="true"></i>&nbsp;440 words&nbsp;
+                <i class="far fa-clock fa-fw" aria-hidden="true"></i>&nbsp;3 minutes&nbsp;</div>
+        </div><div class="details toc" id="toc-static"  data-kept="">
                 <div class="details-summary toc-title">
                     <span>Contents</span>
                     <span><i class="details-icon fas fa-angle-right" aria-hidden="true"></i></span>
@@ -147,6 +147,16 @@ SHA1: 8fc2c50a21e7133c319c6bb4df597cc707f21c91</p>
 </blockquote>
 <p>In this challenge we have to find IP of the attacker using files <code>access.log</code> and <code>error.log</code>.</p>
 <p>This one is very easy. When we open the &ldquo;access.log&rdquo; file, the IP address is immediately visible in first line.</p>
+<p><figure><a class="lightgallery" href="/images/deadface22forensics/first%20strike.png" title="firststrike" data-thumbnail="/images/deadface22forensics/first%20strike.png" data-sub-html="<h2>First Strike</h2><p>firststrike</p>">
+        <img
+            class="lazyload"
+            src="/svg/loading.min.svg"
+            data-src="/images/deadface22forensics/first%20strike.png"
+            data-srcset="/images/deadface22forensics/first%20strike.png, /images/deadface22forensics/first%20strike.png 1.5x, /images/deadface22forensics/first%20strike.png 2x"
+            data-sizes="auto"
+            alt="/images/deadface22forensics/first%20strike.png" />
+    </a><figcaption class="image-caption">First Strike</figcaption>
+    </figure></p>
 <p>Flag: <code>flag{165.227.73.138}</code></p>
 <hr>
 <h2 id="toolbox">ToolBox</h2>
@@ -156,7 +166,17 @@ SHA1: 8fc2c50a21e7133c319c6bb4df597cc707f21c91</p>
 <p>Submit the flag as flag{tool}. Example: flag{notepad}.</p>
 <p>Use the files from First Strike.</p>
 </blockquote>
-<p>On third line in <code>access.log</code> we can see that attacker used NMAP to scan the website.</p>
+<p>In line <code>3</code> in <code>access.log</code> we can see that attacker used NMAP to scan the website.</p>
+<p><figure><a class="lightgallery" href="/images/deadface22forensics/nmap.png" title="nmap" data-thumbnail="/images/deadface22forensics/nmap.png" data-sub-html="<h2>NMAP</h2><p>nmap</p>">
+        <img
+            class="lazyload"
+            src="/svg/loading.min.svg"
+            data-src="/images/deadface22forensics/nmap.png"
+            data-srcset="/images/deadface22forensics/nmap.png, /images/deadface22forensics/nmap.png 1.5x, /images/deadface22forensics/nmap.png 2x"
+            data-sizes="auto"
+            alt="/images/deadface22forensics/nmap.png" />
+    </a><figcaption class="image-caption">NMAP</figcaption>
+    </figure></p>
 <p>Flag: <code>flag{NMAP}</code></p>
 <hr>
 <h2 id="grave-digger-1">Grave Digger 1</h2>
@@ -171,34 +191,77 @@ Password: 123456789q</p>
 <p><code>Login : crypto_vamp</code>
 <code>Password: 123456789q</code></p>
 <p>After logging in we just use command <code>env</code> and we get the flag.</p>
+<p><figure><a class="lightgallery" href="/images/deadface22forensics/gravedigger1.png" title="gravedigger1" data-thumbnail="/images/deadface22forensics/gravedigger1.png" data-sub-html="<h2>Grave Digger1</h2><p>gravedigger1</p>">
+        <img
+            class="lazyload"
+            src="/svg/loading.min.svg"
+            data-src="/images/deadface22forensics/gravedigger1.png"
+            data-srcset="/images/deadface22forensics/gravedigger1.png, /images/deadface22forensics/gravedigger1.png 1.5x, /images/deadface22forensics/gravedigger1.png 2x"
+            data-sizes="auto"
+            alt="/images/deadface22forensics/gravedigger1.png" />
+    </a><figcaption class="image-caption">Grave Digger1</figcaption>
+    </figure></p>
 <p>Flag: <code>flag{d34dF4C3_en1roN_v4r}</code></p>
 <hr>
 <h2 id="agents-of-chaos">Agents of Chaos</h2>
+<p><code>POINTS 25</code></p>
 <blockquote>
 <p>What is the first user agent of the second scanning tool used by the attacker?</p>
 <p>Submit the flag as flag{user agent string}.</p>
 <p>Use the files from First Strike.</p>
 </blockquote>
 <p>In this challenge we need to find a user-agent strings from 2nd tool used by the attacker.</p>
-<p>We can notice a new tool being used on line 70 of the same file we used for the previous challenges.</p>
+<p>We can notice a new tool being used on line <code>70</code> of the same file we used for the previous challenges.</p>
+<p><figure><a class="lightgallery" href="/images/deadface22forensics/agentofchaos.png" title="toolbox" data-thumbnail="/images/deadface22forensics/agentofchaos.png" data-sub-html="<h2>Agent of Chaos</h2><p>toolbox</p>">
+        <img
+            class="lazyload"
+            src="/svg/loading.min.svg"
+            data-src="/images/deadface22forensics/agentofchaos.png"
+            data-srcset="/images/deadface22forensics/agentofchaos.png, /images/deadface22forensics/agentofchaos.png 1.5x, /images/deadface22forensics/agentofchaos.png 2x"
+            data-sizes="auto"
+            alt="/images/deadface22forensics/agentofchaos.png" />
+    </a><figcaption class="image-caption">Agent of Chaos</figcaption>
+    </figure></p>
 <p>Flag: <code>flag{Mozilla/5.00 (Nikto/2.1.6) (Evasions:None) (Test:Port Check)}</code></p>
 <hr>
 <h2 id="iterations">Iterations</h2>
+<p><code>POINTS 25</code></p>
 <blockquote>
 <p>What is the name of the tool that likely resulted in DEADFACE acquiring login credentials to ESU&rsquo;s website?</p>
 <p>Submit the flag as flag{tool}.</p>
 <p>Use the files from First Strike.</p>
 </blockquote>
 <p>We can see that the attacker has used a new tool to brute-force the <code>login.php</code> page&rsquo;s credentials in line <code>5881</code>.</p>
+<p><figure><a class="lightgallery" href="/images/deadface22forensics/hydra.png" title="hydra" data-thumbnail="/images/deadface22forensics/hydra.png" data-sub-html="<h2>Hydra</h2><p>hydra</p>">
+        <img
+            class="lazyload"
+            src="/svg/loading.min.svg"
+            data-src="/images/deadface22forensics/hydra.png"
+            data-srcset="/images/deadface22forensics/hydra.png, /images/deadface22forensics/hydra.png 1.5x, /images/deadface22forensics/hydra.png 2x"
+            data-sizes="auto"
+            alt="/images/deadface22forensics/hydra.png" />
+    </a><figcaption class="image-caption">Hydra</figcaption>
+    </figure></p>
 <p>Flag: <code>flag{Hydra}</code></p>
 <hr>
 <h2 id="submission">Submission</h2>
+<p><code>POINTS 40</code></p>
 <blockquote>
 <p>What artifact did DEADFACE place onto ESU&rsquo;s website to gain access to the filesystem?</p>
 <p>Submit the flag as flag{filename}.</p>
 <p>Use the files from First Strike.</p>
 </blockquote>
 <p>Near the end of the <code>access.log</code> in line <code>7442</code> we see that attacker uploaded the file and then accessed it.</p>
+<p><figure><a class="lightgallery" href="/images/deadface22forensics/submission.png" title="submission" data-thumbnail="/images/deadface22forensics/submission.png" data-sub-html="<h2>Submission</h2><p>submission</p>">
+        <img
+            class="lazyload"
+            src="/svg/loading.min.svg"
+            data-src="/images/deadface22forensics/submission.png"
+            data-srcset="/images/deadface22forensics/submission.png, /images/deadface22forensics/submission.png 1.5x, /images/deadface22forensics/submission.png 2x"
+            data-sizes="auto"
+            alt="/images/deadface22forensics/submission.png" />
+    </a><figcaption class="image-caption">Submission</figcaption>
+    </figure></p>
 <p>Flag: <code>flag{info.php}</code></p>
 </div><div class="post-footer" id="post-footer">
     <div class="post-info">
@@ -211,7 +274,7 @@ Password: 123456789q</p>
                             <a class="link-to-markdown" href="/deadfaceforensics/index.md" target="_blank">Read Markdown</a>
                         </span></div>
             <div class="post-info-share">
-                <span><a href="javascript:void(0);" title="Share on Twitter" data-sharer="twitter" data-url="http://kennyh.github.io/deadfaceforensics/" data-title="DeadFace 2022 Forensics" data-via="xxxx"><i class="fab fa-twitter fa-fw" aria-hidden="true"></i></a><a href="javascript:void(0);" title="Share on Facebook" data-sharer="facebook" data-url="http://kennyh.github.io/deadfaceforensics/"><i class="fab fa-facebook-square fa-fw" aria-hidden="true"></i></a><a href="javascript:void(0);" title="Share on Hacker News" data-sharer="hackernews" data-url="http://kennyh.github.io/deadfaceforensics/" data-title="DeadFace 2022 Forensics"><i class="fab fa-hacker-news fa-fw" aria-hidden="true"></i></a><a href="javascript:void(0);" title="Share on Line" data-sharer="line" data-url="http://kennyh.github.io/deadfaceforensics/" data-title="DeadFace 2022 Forensics"><i data-svg-src="/lib/simple-icons/icons/line.min.svg" aria-hidden="true"></i></a><a href="javascript:void(0);" title="Share on 微博" data-sharer="weibo" data-url="http://kennyh.github.io/deadfaceforensics/" data-title="DeadFace 2022 Forensics"><i class="fab fa-weibo fa-fw" aria-hidden="true"></i></a></span>
+                <span><a href="javascript:void(0);" title="Share on Twitter" data-sharer="twitter" data-url="http://kennyh.github.io/deadfaceforensics/" data-title="DeadFace 2022 Forensics" data-via="sneakerdruid"><i class="fab fa-twitter fa-fw" aria-hidden="true"></i></a><a href="javascript:void(0);" title="Share on Facebook" data-sharer="facebook" data-url="http://kennyh.github.io/deadfaceforensics/"><i class="fab fa-facebook-square fa-fw" aria-hidden="true"></i></a><a href="javascript:void(0);" title="Share on Hacker News" data-sharer="hackernews" data-url="http://kennyh.github.io/deadfaceforensics/" data-title="DeadFace 2022 Forensics"><i class="fab fa-hacker-news fa-fw" aria-hidden="true"></i></a><a href="javascript:void(0);" title="Share on Line" data-sharer="line" data-url="http://kennyh.github.io/deadfaceforensics/" data-title="DeadFace 2022 Forensics"><i data-svg-src="/lib/simple-icons/icons/line.min.svg" aria-hidden="true"></i></a><a href="javascript:void(0);" title="Share on 微博" data-sharer="weibo" data-url="http://kennyh.github.io/deadfaceforensics/" data-title="DeadFace 2022 Forensics"><i class="fab fa-weibo fa-fw" aria-hidden="true"></i></a></span>
             </div>
         </div>
     </div>
@@ -223,7 +286,8 @@ Password: 123456789q</p>
         </section>
     </div>
 
-    <div class="post-nav"></div>
+    <div class="post-nav">
+            <a href="/deadfacestego/" class="next" rel="next" title="DeadFaceStego">DeadFaceStego<i class="fas fa-angle-right fa-fw" aria-hidden="true"></i></a></div>
 </div>
 </article></div>
             </main><footer class="footer">
@@ -237,5 +301,5 @@ Password: 123456789q</p>
             </a><a href="#" id="view-comments" class="fixed-button" title="View Comments">
                 <i class="fas fa-comment fa-fw" aria-hidden="true"></i>
             </a>
-        </div><link rel="stylesheet" href="/lib/katex/katex.min.css"><link rel="stylesheet" href="/lib/cookieconsent/cookieconsent.min.css"><script type="text/javascript" src="/lib/autocomplete/autocomplete.min.js"></script><script type="text/javascript" src="/lib/lunr/lunr.min.js"></script><script type="text/javascript" src="/lib/lazysizes/lazysizes.min.js"></script><script type="text/javascript" src="/lib/clipboard/clipboard.min.js"></script><script type="text/javascript" src="/lib/sharer/sharer.min.js"></script><script type="text/javascript" src="/lib/katex/katex.min.js"></script><script type="text/javascript" src="/lib/katex/contrib/auto-render.min.js"></script><script type="text/javascript" src="/lib/katex/contrib/copy-tex.min.js"></script><script type="text/javascript" src="/lib/katex/contrib/mhchem.min.js"></script><script type="text/javascript" src="/lib/cookieconsent/cookieconsent.min.js"></script><script type="text/javascript">window.config={"code":{"copyTitle":"Copy to clipboard","maxShownLines":50},"comment":{},"cookieconsent":{"content":{"dismiss":"Got it!","link":"Learn more","message":"This website uses Cookies to improve your experience."},"enable":true,"palette":{"button":{"background":"#f0f0f0"},"popup":{"background":"#1aa3ff"}},"theme":"edgeless"},"math":{"delimiters":[{"display":true,"left":"$$","right":"$$"},{"display":true,"left":"\\[","right":"\\]"},{"display":true,"left":"\\begin{equation}","right":"\\end{equation}"},{"display":true,"left":"\\begin{equation*}","right":"\\end{equation*}"},{"display":true,"left":"\\begin{align}","right":"\\end{align}"},{"display":true,"left":"\\begin{align*}","right":"\\end{align*}"},{"display":true,"left":"\\begin{alignat}","right":"\\end{alignat}"},{"display":true,"left":"\\begin{alignat*}","right":"\\end{alignat*}"},{"display":true,"left":"\\begin{gather}","right":"\\end{gather}"},{"display":true,"left":"\\begin{CD}","right":"\\end{CD}"},{"display":false,"left":"$","right":"$"},{"display":false,"left":"\\(","right":"\\)"}],"strict":false},"search":{"highlightTag":"em","lunrIndexURL":"/index.json","maxResultLength":10,"noResultsFound":"No results found","snippetLength":30,"type":"lunr"}};</script><script type="text/javascript" src="/js/theme.min.js"></script></body>
+        </div><link rel="stylesheet" href="/lib/lightgallery/css/lightgallery-bundle.min.css"><link rel="stylesheet" href="/lib/katex/katex.min.css"><link rel="stylesheet" href="/lib/cookieconsent/cookieconsent.min.css"><script type="text/javascript" src="/lib/autocomplete/autocomplete.min.js"></script><script type="text/javascript" src="/lib/lunr/lunr.min.js"></script><script type="text/javascript" src="/lib/lazysizes/lazysizes.min.js"></script><script type="text/javascript" src="/lib/lightgallery/lightgallery.min.js"></script><script type="text/javascript" src="/lib/lightgallery/plugins/thumbnail/lg-thumbnail.min.js"></script><script type="text/javascript" src="/lib/lightgallery/plugins/zoom/lg-zoom.min.js"></script><script type="text/javascript" src="/lib/clipboard/clipboard.min.js"></script><script type="text/javascript" src="/lib/sharer/sharer.min.js"></script><script type="text/javascript" src="/lib/katex/katex.min.js"></script><script type="text/javascript" src="/lib/katex/contrib/auto-render.min.js"></script><script type="text/javascript" src="/lib/katex/contrib/copy-tex.min.js"></script><script type="text/javascript" src="/lib/katex/contrib/mhchem.min.js"></script><script type="text/javascript" src="/lib/cookieconsent/cookieconsent.min.js"></script><script type="text/javascript">window.config={"code":{"copyTitle":"Copy to clipboard","maxShownLines":50},"comment":{},"cookieconsent":{"content":{"dismiss":"Got it!","link":"Learn more","message":"This website uses Cookies to improve your experience."},"enable":true,"palette":{"button":{"background":"#f0f0f0"},"popup":{"background":"#1aa3ff"}},"theme":"edgeless"},"lightgallery":true,"math":{"delimiters":[{"display":true,"left":"$$","right":"$$"},{"display":true,"left":"\\[","right":"\\]"},{"display":true,"left":"\\begin{equation}","right":"\\end{equation}"},{"display":true,"left":"\\begin{equation*}","right":"\\end{equation*}"},{"display":true,"left":"\\begin{align}","right":"\\end{align}"},{"display":true,"left":"\\begin{align*}","right":"\\end{align*}"},{"display":true,"left":"\\begin{alignat}","right":"\\end{alignat}"},{"display":true,"left":"\\begin{alignat*}","right":"\\end{alignat*}"},{"display":true,"left":"\\begin{gather}","right":"\\end{gather}"},{"display":true,"left":"\\begin{CD}","right":"\\end{CD}"},{"display":false,"left":"$","right":"$"},{"display":false,"left":"\\(","right":"\\)"}],"strict":false},"search":{"highlightTag":"em","lunrIndexURL":"/index.json","maxResultLength":10,"noResultsFound":"No results found","snippetLength":30,"type":"lunr"}};</script><script type="text/javascript" src="/js/theme.min.js"></script></body>
 </html>

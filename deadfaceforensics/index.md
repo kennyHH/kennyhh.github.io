@@ -25,7 +25,7 @@ In this challenge we have to find IP of the attacker using files `access.log` an
 
 This one is very easy. When we open the "access.log" file, the IP address is immediately visible in first line.
 
-
+![firststrike](/images/deadface22forensics/first%20strike.png "First Strike")
 
 Flag: `flag{165.227.73.138}`
 
@@ -42,8 +42,9 @@ Flag: `flag{165.227.73.138}`
 >
 >Use the files from First Strike.
 
-On third line in `access.log` we can see that attacker used NMAP to scan the website.
+In line `3` in `access.log` we can see that attacker used NMAP to scan the website.
 
+![nmap](/images/deadface22forensics/nmap.png "NMAP")
 
 Flag: `flag{NMAP}`
 
@@ -67,12 +68,15 @@ We log in to the machine using credentials:
 
 After logging in we just use command `env` and we get the flag.
 
+![gravedigger1](/images/deadface22forensics/gravedigger1.png "Grave Digger1")
 
 Flag: `flag{d34dF4C3_en1roN_v4r}`
 
 ---
 
 ## Agents of Chaos
+
+`POINTS 25`
 
 >What is the first user agent of the second scanning tool used by the attacker?
 >
@@ -82,15 +86,17 @@ Flag: `flag{d34dF4C3_en1roN_v4r}`
 
 In this challenge we need to find a user-agent strings from 2nd tool used by the attacker.
 
-We can notice a new tool being used on line 70 of the same file we used for the previous challenges.
+We can notice a new tool being used on line `70` of the same file we used for the previous challenges.
 
-
+![toolbox](/images/deadface22forensics/agentofchaos.png "Agent of Chaos")
 
 Flag: `flag{Mozilla/5.00 (Nikto/2.1.6) (Evasions:None) (Test:Port Check)}`
 
 ---
 
 ## Iterations
+
+`POINTS 25`
 
 >What is the name of the tool that likely resulted in DEADFACE acquiring login credentials to ESU's website?
 >
@@ -100,12 +106,15 @@ Flag: `flag{Mozilla/5.00 (Nikto/2.1.6) (Evasions:None) (Test:Port Check)}`
 
 We can see that the attacker has used a new tool to brute-force the `login.php` page's credentials in line `5881`.
 
+![hydra](/images/deadface22forensics/hydra.png "Hydra")
 
 Flag: `flag{Hydra}`
 
 ---
 
 ## Submission
+
+`POINTS 40`
 
 >What artifact did DEADFACE place onto ESU's website to gain access to the filesystem?
 >
@@ -115,6 +124,10 @@ Flag: `flag{Hydra}`
 
 Near the end of the `access.log` in line `7442` we see that attacker uploaded the file and then accessed it.
 
+![submission](/images/deadface22forensics/submission.png "Submission")
+
 Flag: `flag{info.php}`
+
+
 
 
