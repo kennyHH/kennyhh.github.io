@@ -12,7 +12,7 @@
     <description><![CDATA[DeadFace 2022 Forensics The Goodest Boy POINTS : 20
 We found this image on Ghost Town. We think bumpyhassan hid some information here. Can you see what information he hid?
 In this challenge we get a picture of a dog with some data hidden in it.
-First thing we do is check if it&rsquo;s a JPG file.
+Doggo First thing we do is check if it&rsquo;s a JPG file.
 Doggo File Check Looks like it&rsquo;s a proper jpg file .
 Next we use strings to look for any clues.]]></description>
 </item>
