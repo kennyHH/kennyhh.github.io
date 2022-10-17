@@ -10,17 +10,11 @@
     <author>KennyH</author>
     <guid>http://kennyh.github.io/deadface22stego/</guid>
     <description><![CDATA[DeadFace 2022 Forensics The Goodest Boy POINTS : 20
-Flag: flag{xxx}
-Eye Know ,Do You ? POINTS : 20
-Flag: flag{xxx}
-Life&rsquo;s a Glitch POINTS : 50
-Flag: flag{xxx}
-Holiday Nesting Doll POINTS : 50
-Flag: flag{xxx}
-Missing home POINTS : 100
-Flag: flag{xxx}
-The Farm POINTS : 100
-Flag: flag{xxx}]]></description>
+We found this image on Ghost Town. We think bumpyhassan hid some information here. Can you see what information he hid?
+In this challenge we get a picture of a dog with some data hidden in it.
+First thing we do is check if it&rsquo;s a JPG file.
+Doggo File Check Looks like it&rsquo;s a proper jpg file .
+Next we use strings to look for any clues.]]></description>
 </item>
 <item>
     <title>DeadFace 2022 Forensics</title>
