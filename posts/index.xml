@@ -4,19 +4,30 @@
         <link>http://kennyh.github.io/posts/</link>
         <description>All Posts | KennyH Blog</description>
         <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Mon, 17 Oct 2022 13:56:36 -0400</lastBuildDate><atom:link href="http://kennyh.github.io/posts/" rel="self" type="application/rss+xml" /><item>
-    <title>DeadFaceStego</title>
-    <link>http://kennyh.github.io/deadfacestego/</link>
+    <title>DeadFace 2022 Stegonography</title>
+    <link>http://kennyh.github.io/deadface22stego/</link>
     <pubDate>Mon, 17 Oct 2022 13:56:36 -0400</pubDate>
     <author>KennyH</author>
-    <guid>http://kennyh.github.io/deadfacestego/</guid>
-    <description><![CDATA[TBD ]]></description>
+    <guid>http://kennyh.github.io/deadface22stego/</guid>
+    <description><![CDATA[DeadFace 2022 Forensics The Goodest Boy POINTS : 20
+Flag: flag{xxx}
+Eye Know ,Do You ? POINTS : 20
+Flag: flag{xxx}
+Life&rsquo;s a Glitch POINTS : 50
+Flag: flag{xxx}
+Holiday Nesting Doll POINTS : 50
+Flag: flag{xxx}
+Missing home POINTS : 100
+Flag: flag{xxx}
+The Farm POINTS : 100
+Flag: flag{xxx}]]></description>
 </item>
 <item>
     <title>DeadFace 2022 Forensics</title>
-    <link>http://kennyh.github.io/deadfaceforensics/</link>
+    <link>http://kennyh.github.io/deadface22forensics/</link>
     <pubDate>Mon, 17 Oct 2022 11:52:40 -0400</pubDate>
     <author>KennyH</author>
-    <guid>http://kennyh.github.io/deadfaceforensics/</guid>
+    <guid>http://kennyh.github.io/deadface22forensics/</guid>
     <description><![CDATA[DeadFace 2022 Forensics First strike POINTS : 10
 There was a cyberattack on ESU&rsquo;s website on July 27th. ESU IT staff collected data from the attack and need your help sifting through it.
 What IP Address did the attack originate from?
