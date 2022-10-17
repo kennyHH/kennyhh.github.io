@@ -47,7 +47,7 @@ File `itsasecret.pdf` was hidden inside the picture !
 
 We open it and find the flag !
 
-![doggoflag](/images/deadface22stego/doggoflag.png "Doggo Flag")
+![doggoflag](/images/deadface22stego/doggosteghide.png "Doggo Flag")
 
 Flag: `flag{whos_A_g00d_boi_bork_bork}`
 
@@ -91,15 +91,11 @@ In this challenge we get a gif file instead of usual jpg. It's safe to assume th
 
 ![glitch](/images/deadface22stego/glitchedout.gif "Glitch gif")
 
-
 Once again , we use StegSolve to find some useful information.
-
 
 We go to Analyse > Frame Browser and start flipping throgh the frames.
 
-
-![glitchframebrowser](/images/deadface22stego/stegsolvedif.png "Frame Browser")
-
+![glitchframebrowser](/images/deadface22stego/stegsolvegif.png "Frame Browser")
 
 We receive an HIT in frame 23/80! Although that flag is visible, it is difficult to read.
 
@@ -117,8 +113,66 @@ Flag: `flag{c0rrupt3d}`
 
 `POINTS : 50`
 
+>Holidays are a headache and this one is no different. The flag is fractured, can you find it? TIME is almost up! Santa is coming!
 
-Flag: `flag{xxx}`
+We get a `zip` file with 3 images inside it . 
+
+![files](/images/deadface22stego/nestingfiles.png "Files")
+
+Let's get to work !
+
+I've run strings on all 3 files , but no results . 
+
+So let's try `stegseek` with `rockyou.txt` passlist !
+
+```bash
+stegseek -sf Scary1.jpg -wl /opt/rockyou.txt
+stegseek -sf Scary2.jpg -wl /opt/rockyou.txt
+stegseek -sf Scary3.jpg -wl /opt/rockyou.txt
+```
+
+![stegseek](/images/deadface22stego/scary1seek.png "StegSeek")
+
+No luck on 1st image, but we've found passwords for 2nd and 3rd one ! YEAAAAAAAAAH
+
+Extraction of the hidden data from the pictures provided us with 2 new images. I wonder what might be in them.
+
+![scarynewfiles](/images/deadface22stego/scarynewfiles.png "New files")
+
+I've moved old pictures to `/old` folder , and changed the extensions from `.jpg.out` to `.jpg`
+
+Run StegSeek once more, but this time it failed to provide the passwords.
+
+Let's try good old `strings`.
+
+![scarystrings2](/images/deadface22stego/scary2strings.png "Scary 2 strings")
+![scarystrings3](/images/deadface22stego/scary3strings.png "Scary 3 strings")
+
+I've uncovered two flags, however they appear to be encoded using some cipher. It's CyberChef time!
+
+![scarychef](/images/deadface22stego/scarychef1.png "CyberChef")
+
+
+`flag{veF9pbmFib3hfaW5hYm94X2luYWJve}` > `ox_inabox_inabox_inabo`
+`flag{ZmxhZ3tpbmFib3hfaW5hYm94X2luYWJ}` > `flag{inabox_inabox_inab`
+
+1st flag was encoded using Base64 and rotated right twice.
+
+2nd flag was encoded using Base64.
+
+
+After trying for five minutes to find the remaining piece of the flag, I gave up. I started to wonder if it was the same word repeated a few times.
+
+I submitted the flag: `flag{inabox_inabox_inabox_inabox_inabox_inabox_inabox_inabox}` and it worked !
+
+![pikachu](https://media.tenor.com/UZJd1pjj4NMAAAAC/surprised-pikachu.gif)
+
+I've missed the message on Discord server that the 3rd flag was missing from the picture. No big deal, it happens.
+
+![scarydiscord](/images/deadface22stego/scarydiscord.png)
+
+
+Flag: `flag{inabox_inabox_inabox_inabox_inabox_inabox_inabox_inabox}`
 
 ---
 

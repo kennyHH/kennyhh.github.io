@@ -40,7 +40,7 @@ Next we use strings to look for any clues."/>
         "mainEntityOfPage": {
             "@type": "WebPage",
             "@id": "http:\/\/kennyh.github.io\/deadface22stego\/"
-        },"genre": "posts","wordcount":  420 ,
+        },"genre": "posts","wordcount":  679 ,
         "url": "http:\/\/kennyh.github.io\/deadface22stego\/","datePublished": "2022-10-17T13:56:36-04:00","dateModified": "2022-10-17T13:56:36-04:00","publisher": {
             "@type": "Organization",
             "name": ""},"author": {
@@ -114,8 +114,8 @@ Next we use strings to look for any clues."/>
             <div class="toc-content" id="toc-content-auto"></div>
         </div><article class="page single"><h1 class="single-title animate__animated animate__flipInX">DeadFace 2022 Stegonography</h1><div class="post-meta">
             <div class="post-meta-line"><span class="post-author"><a href="/" title="Author" rel="author" class="author"><i class="fas fa-user-circle fa-fw" aria-hidden="true"></i>KennyH</a></span>&nbsp;<span class="post-category">included in <a href="/categories/deadface2022/"><i class="far fa-folder fa-fw" aria-hidden="true"></i>DeadFace2022</a></span></div>
-            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw" aria-hidden="true"></i>&nbsp;<time datetime="2022-10-17">2022-10-17</time>&nbsp;<i class="fas fa-pencil-alt fa-fw" aria-hidden="true"></i>&nbsp;420 words&nbsp;
-                <i class="far fa-clock fa-fw" aria-hidden="true"></i>&nbsp;2 minutes&nbsp;</div>
+            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw" aria-hidden="true"></i>&nbsp;<time datetime="2022-10-17">2022-10-17</time>&nbsp;<i class="fas fa-pencil-alt fa-fw" aria-hidden="true"></i>&nbsp;679 words&nbsp;
+                <i class="far fa-clock fa-fw" aria-hidden="true"></i>&nbsp;4 minutes&nbsp;</div>
         </div><div class="details toc" id="toc-static"  data-kept="">
                 <div class="details-summary toc-title">
                     <span>Contents</span>
@@ -203,14 +203,14 @@ Next we use strings to look for any clues."/>
     </figure></p>
 <p>File <code>itsasecret.pdf</code> was hidden inside the picture !</p>
 <p>We open it and find the flag !</p>
-<p><figure><a class="lightgallery" href="/images/deadface22stego/doggoflag.png" title="doggoflag" data-thumbnail="/images/deadface22stego/doggoflag.png" data-sub-html="<h2>Doggo Flag</h2><p>doggoflag</p>">
+<p><figure><a class="lightgallery" href="/images/deadface22stego/doggosteghide.png" title="doggoflag" data-thumbnail="/images/deadface22stego/doggosteghide.png" data-sub-html="<h2>Doggo Flag</h2><p>doggoflag</p>">
         <img
             class="lazyload"
             src="/svg/loading.min.svg"
-            data-src="/images/deadface22stego/doggoflag.png"
-            data-srcset="/images/deadface22stego/doggoflag.png, /images/deadface22stego/doggoflag.png 1.5x, /images/deadface22stego/doggoflag.png 2x"
+            data-src="/images/deadface22stego/doggosteghide.png"
+            data-srcset="/images/deadface22stego/doggosteghide.png, /images/deadface22stego/doggosteghide.png 1.5x, /images/deadface22stego/doggosteghide.png 2x"
             data-sizes="auto"
-            alt="/images/deadface22stego/doggoflag.png" />
+            alt="/images/deadface22stego/doggosteghide.png" />
     </a><figcaption class="image-caption">Doggo Flag</figcaption>
     </figure></p>
 <p>Flag: <code>flag{whos_A_g00d_boi_bork_bork}</code></p>
@@ -275,14 +275,14 @@ GIF. See if you can use your repertoire of tools to find the flag hidden in the 
     </figure></p>
 <p>Once again , we use StegSolve to find some useful information.</p>
 <p>We go to Analyse &gt; Frame Browser and start flipping throgh the frames.</p>
-<p><figure><a class="lightgallery" href="/images/deadface22stego/stegsolvedif.png" title="glitchframebrowser" data-thumbnail="/images/deadface22stego/stegsolvedif.png" data-sub-html="<h2>Frame Browser</h2><p>glitchframebrowser</p>">
+<p><figure><a class="lightgallery" href="/images/deadface22stego/stegsolvegif.png" title="glitchframebrowser" data-thumbnail="/images/deadface22stego/stegsolvegif.png" data-sub-html="<h2>Frame Browser</h2><p>glitchframebrowser</p>">
         <img
             class="lazyload"
             src="/svg/loading.min.svg"
-            data-src="/images/deadface22stego/stegsolvedif.png"
-            data-srcset="/images/deadface22stego/stegsolvedif.png, /images/deadface22stego/stegsolvedif.png 1.5x, /images/deadface22stego/stegsolvedif.png 2x"
+            data-src="/images/deadface22stego/stegsolvegif.png"
+            data-srcset="/images/deadface22stego/stegsolvegif.png, /images/deadface22stego/stegsolvegif.png 1.5x, /images/deadface22stego/stegsolvegif.png 2x"
             data-sizes="auto"
-            alt="/images/deadface22stego/stegsolvedif.png" />
+            alt="/images/deadface22stego/stegsolvegif.png" />
     </a><figcaption class="image-caption">Frame Browser</figcaption>
     </figure></p>
 <p>We receive an HIT in frame 23/80! Although that flag is visible, it is difficult to read.</p>
@@ -300,7 +300,115 @@ GIF. See if you can use your repertoire of tools to find the flag hidden in the 
 <hr>
 <h2 id="holiday-nesting-doll">Holiday Nesting Doll</h2>
 <p><code>POINTS : 50</code></p>
-<p>Flag: <code>flag{xxx}</code></p>
+<blockquote>
+<p>Holidays are a headache and this one is no different. The flag is fractured, can you find it? TIME is almost up! Santa is coming!</p>
+</blockquote>
+<p>We get a <code>zip</code> file with 3 images inside it .</p>
+<p><figure><a class="lightgallery" href="/images/deadface22stego/nestingfiles.png" title="files" data-thumbnail="/images/deadface22stego/nestingfiles.png" data-sub-html="<h2>Files</h2><p>files</p>">
+        <img
+            class="lazyload"
+            src="/svg/loading.min.svg"
+            data-src="/images/deadface22stego/nestingfiles.png"
+            data-srcset="/images/deadface22stego/nestingfiles.png, /images/deadface22stego/nestingfiles.png 1.5x, /images/deadface22stego/nestingfiles.png 2x"
+            data-sizes="auto"
+            alt="/images/deadface22stego/nestingfiles.png" />
+    </a><figcaption class="image-caption">Files</figcaption>
+    </figure></p>
+<p>Let&rsquo;s get to work !</p>
+<p>I&rsquo;ve run strings on all 3 files , but no results .</p>
+<p>So let&rsquo;s try <code>stegseek</code> with <code>rockyou.txt</code> passlist !</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">stegseek -sf Scary1.jpg -wl /opt/rockyou.txt
+</span></span><span class="line"><span class="cl">stegseek -sf Scary2.jpg -wl /opt/rockyou.txt
+</span></span><span class="line"><span class="cl">stegseek -sf Scary3.jpg -wl /opt/rockyou.txt
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p><figure><a class="lightgallery" href="/images/deadface22stego/scary1seek.png" title="stegseek" data-thumbnail="/images/deadface22stego/scary1seek.png" data-sub-html="<h2>StegSeek</h2><p>stegseek</p>">
+        <img
+            class="lazyload"
+            src="/svg/loading.min.svg"
+            data-src="/images/deadface22stego/scary1seek.png"
+            data-srcset="/images/deadface22stego/scary1seek.png, /images/deadface22stego/scary1seek.png 1.5x, /images/deadface22stego/scary1seek.png 2x"
+            data-sizes="auto"
+            alt="/images/deadface22stego/scary1seek.png" />
+    </a><figcaption class="image-caption">StegSeek</figcaption>
+    </figure></p>
+<p>No luck on 1st image, but we&rsquo;ve found passwords for 2nd and 3rd one ! YEAAAAAAAAAH</p>
+<p>Extraction of the hidden data from the pictures provided us with 2 new images. I wonder what might be in them.</p>
+<p><figure><a class="lightgallery" href="/images/deadface22stego/scarynewfiles.png" title="scarynewfiles" data-thumbnail="/images/deadface22stego/scarynewfiles.png" data-sub-html="<h2>New files</h2><p>scarynewfiles</p>">
+        <img
+            class="lazyload"
+            src="/svg/loading.min.svg"
+            data-src="/images/deadface22stego/scarynewfiles.png"
+            data-srcset="/images/deadface22stego/scarynewfiles.png, /images/deadface22stego/scarynewfiles.png 1.5x, /images/deadface22stego/scarynewfiles.png 2x"
+            data-sizes="auto"
+            alt="/images/deadface22stego/scarynewfiles.png" />
+    </a><figcaption class="image-caption">New files</figcaption>
+    </figure></p>
+<p>I&rsquo;ve moved old pictures to <code>/old</code> folder , and changed the extensions from <code>.jpg.out</code> to <code>.jpg</code></p>
+<p>Run StegSeek once more, but this time it failed to provide the passwords.</p>
+<p>Let&rsquo;s try good old <code>strings</code>.</p>
+<p><figure><a class="lightgallery" href="/images/deadface22stego/scary2strings.png" title="scarystrings2" data-thumbnail="/images/deadface22stego/scary2strings.png" data-sub-html="<h2>Scary 2 strings</h2><p>scarystrings2</p>">
+        <img
+            class="lazyload"
+            src="/svg/loading.min.svg"
+            data-src="/images/deadface22stego/scary2strings.png"
+            data-srcset="/images/deadface22stego/scary2strings.png, /images/deadface22stego/scary2strings.png 1.5x, /images/deadface22stego/scary2strings.png 2x"
+            data-sizes="auto"
+            alt="/images/deadface22stego/scary2strings.png" />
+    </a><figcaption class="image-caption">Scary 2 strings</figcaption>
+    </figure>
+<figure><a class="lightgallery" href="/images/deadface22stego/scary3strings.png" title="scarystrings3" data-thumbnail="/images/deadface22stego/scary3strings.png" data-sub-html="<h2>Scary 3 strings</h2><p>scarystrings3</p>">
+        <img
+            class="lazyload"
+            src="/svg/loading.min.svg"
+            data-src="/images/deadface22stego/scary3strings.png"
+            data-srcset="/images/deadface22stego/scary3strings.png, /images/deadface22stego/scary3strings.png 1.5x, /images/deadface22stego/scary3strings.png 2x"
+            data-sizes="auto"
+            alt="/images/deadface22stego/scary3strings.png" />
+    </a><figcaption class="image-caption">Scary 3 strings</figcaption>
+    </figure></p>
+<p>I&rsquo;ve uncovered two flags, however they appear to be encoded using some cipher. It&rsquo;s CyberChef time!</p>
+<p><figure><a class="lightgallery" href="/images/deadface22stego/scarychef1.png" title="scarychef" data-thumbnail="/images/deadface22stego/scarychef1.png" data-sub-html="<h2>CyberChef</h2><p>scarychef</p>">
+        <img
+            class="lazyload"
+            src="/svg/loading.min.svg"
+            data-src="/images/deadface22stego/scarychef1.png"
+            data-srcset="/images/deadface22stego/scarychef1.png, /images/deadface22stego/scarychef1.png 1.5x, /images/deadface22stego/scarychef1.png 2x"
+            data-sizes="auto"
+            alt="/images/deadface22stego/scarychef1.png" />
+    </a><figcaption class="image-caption">CyberChef</figcaption>
+    </figure></p>
+<p><code>flag{veF9pbmFib3hfaW5hYm94X2luYWJve}</code> &gt; <code>ox_inabox_inabox_inabo</code>
+<code>flag{ZmxhZ3tpbmFib3hfaW5hYm94X2luYWJ}</code> &gt; <code>flag{inabox_inabox_inab</code></p>
+<p>1st flag was encoded using Base64 and rotated right twice.</p>
+<p>2nd flag was encoded using Base64.</p>
+<p>After trying for five minutes to find the remaining piece of the flag, I gave up. I started to wonder if it was the same word repeated a few times.</p>
+<p>I submitted the flag: <code>flag{inabox_inabox_inabox_inabox_inabox_inabox_inabox_inabox}</code> and it worked !</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="https://media.tenor.com/UZJd1pjj4NMAAAAC/surprised-pikachu.gif"
+        data-srcset="https://media.tenor.com/UZJd1pjj4NMAAAAC/surprised-pikachu.gif, https://media.tenor.com/UZJd1pjj4NMAAAAC/surprised-pikachu.gif 1.5x, https://media.tenor.com/UZJd1pjj4NMAAAAC/surprised-pikachu.gif 2x"
+        data-sizes="auto"
+        alt="https://media.tenor.com/UZJd1pjj4NMAAAAC/surprised-pikachu.gif"
+        title="pikachu" /></p>
+<p>I&rsquo;ve missed the message on Discord server that the 3rd flag was missing from the picture. No big deal, it happens.</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/images/deadface22stego/scarydiscord.png"
+        data-srcset="/images/deadface22stego/scarydiscord.png, /images/deadface22stego/scarydiscord.png 1.5x, /images/deadface22stego/scarydiscord.png 2x"
+        data-sizes="auto"
+        alt="/images/deadface22stego/scarydiscord.png"
+        title="scarydiscord" /></p>
+<p>Flag: <code>flag{inabox_inabox_inabox_inabox_inabox_inabox_inabox_inabox}</code></p>
 <hr>
 <h2 id="missing-home">Missing home</h2>
 <p><code>POINTS : 100</code></p>
