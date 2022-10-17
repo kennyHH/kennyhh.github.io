@@ -47,7 +47,7 @@ File `itsasecret.pdf` was hidden inside the picture !
 
 We open it and find the flag !
 
-![doggoflag](/images/deadface22stego/doggosteghide.png "Doggo Flag")
+![doggoflag](/images/deadface22stego/doggoflag.png "Doggo Flag")
 
 Flag: `flag{whos_A_g00d_boi_bork_bork}`
 
