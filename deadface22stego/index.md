@@ -4,6 +4,7 @@
 # DeadFace 2022 Forensics 
 
 
+<img data-sizes="auto" data-src="/images/logo_deadface_ctf.png" class="lazyload" />
 
 ---
 
