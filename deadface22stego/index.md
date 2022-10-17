@@ -95,7 +95,7 @@ Once again , we use StegSolve to find some useful information.
 
 We go to Analyse > Frame Browser and start flipping throgh the frames.
 
-![glitchframebrowser](/images/deadface22stego/stegsolvegif.png "Frame Browser")
+![glitchframebrowser](/images/deadface22stego/stegsolvedif.png "Frame Browser")
 
 We receive an HIT in frame 23/80! Although that flag is visible, it is difficult to read.
 
