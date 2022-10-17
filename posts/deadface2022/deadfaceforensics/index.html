@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en-us">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="robots" content="noodp" />
+        <title>DeadFace 2022 Forensics - KennyHH Blog</title><meta name="Description" content="This is my cool site"><meta property="og:title" content="DeadFace 2022 Forensics" />
+<meta property="og:description" content="DeadFace 2022 Forensics First strike POINTS : 10
+There was a cyberattack on ESU&rsquo;s website on July 27th. ESU IT staff collected data from the attack and need your help sifting through it.
+What IP Address did the attack originate from?
+Submit the flag as: flag{ip_address}. Example: flag{192.168.1.1}.
+Download access.log SHA1: b71d59350a6802b9fc1b772a76388ca250ba6d89
+Download error.log SHA1: 8fc2c50a21e7133c319c6bb4df597cc707f21c91
+In this challenge we have to find IP of the attacker using files access.log and error." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://kennyhh.github.io/posts/deadface2022/deadfaceforensics/" /><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2022-10-17T11:52:40-04:00" />
+<meta property="article:modified_time" content="2022-10-17T11:52:40-04:00" /><meta property="og:site_name" content="My cool site" />
+
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="DeadFace 2022 Forensics"/>
+<meta name="twitter:description" content="DeadFace 2022 Forensics First strike POINTS : 10
+There was a cyberattack on ESU&rsquo;s website on July 27th. ESU IT staff collected data from the attack and need your help sifting through it.
+What IP Address did the attack originate from?
+Submit the flag as: flag{ip_address}. Example: flag{192.168.1.1}.
+Download access.log SHA1: b71d59350a6802b9fc1b772a76388ca250ba6d89
+Download error.log SHA1: 8fc2c50a21e7133c319c6bb4df597cc707f21c91
+In this challenge we have to find IP of the attacker using files access.log and error."/>
+<meta name="application-name" content="My cool site">
+<meta name="apple-mobile-web-app-title" content="My cool site"><meta name="theme-color" content="#ffffff"><meta name="msapplication-TileColor" content="#da532c"><link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5"><link rel="manifest" href="/site.webmanifest"><link rel="canonical" href="https://kennyhh.github.io/posts/deadface2022/deadfaceforensics/" /><link rel="stylesheet" href="/css/style.min.css"><link rel="preload" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.1/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+        <noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.1/css/all.min.css"></noscript><link rel="preload" href="https://cdn.jsdelivr.net/npm/animate.css@4.1.1/animate.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+        <noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@4.1.1/animate.min.css"></noscript><script type="application/ld+json">
+    {
+        "@context": "http://schema.org",
+        "@type": "BlogPosting",
+        "headline": "DeadFace 2022 Forensics",
+        "inLanguage": "en-us",
+        "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "https:\/\/kennyhh.github.io\/posts\/deadface2022\/deadfaceforensics\/"
+        },"genre": "posts","wordcount":  424 ,
+        "url": "https:\/\/kennyhh.github.io\/posts\/deadface2022\/deadfaceforensics\/","datePublished": "2022-10-17T11:52:40-04:00","dateModified": "2022-10-17T11:52:40-04:00","publisher": {
+            "@type": "Organization",
+            "name": ""},"author": {
+                "@type": "Person",
+                "name": "Author"
+            },"description": ""
+    }
+    </script></head>
+    <body data-header-desktop="fixed" data-header-mobile="auto"><script type="text/javascript">(window.localStorage && localStorage.getItem('theme') ? localStorage.getItem('theme') === 'dark' : ('auto' === 'auto' ? window.matchMedia('(prefers-color-scheme: dark)').matches : 'auto' === 'dark')) && document.body.setAttribute('theme', 'dark');</script>
+
+        <div id="mask"></div><div class="wrapper"><header class="desktop" id="header-desktop">
+    <div class="header-wrapper">
+        <div class="header-title">
+            <a href="/" title="KennyHH Blog">My cool site</a>
+        </div>
+        <div class="menu">
+            <div class="menu-inner"><a class="menu-item" href="/posts/" title="Posts"> Posts </a><a class="menu-item" href="/categories/" title="Categories"> Categories </a><a class="menu-item" href="/about/" title="About"> About </a><span class="menu-item delimiter"></span><a href="javascript:void(0);" class="menu-item theme-switch" title="Switch Theme">
+                    <i class="fas fa-adjust fa-fw" aria-hidden="true"></i>
+                </a></div>
+        </div>
+    </div>
+</header><header class="mobile" id="header-mobile">
+    <div class="header-container">
+        <div class="header-wrapper">
+            <div class="header-title">
+                <a href="/" title="KennyHH Blog">My cool site</a>
+            </div>
+            <div class="menu-toggle" id="menu-toggle-mobile">
+                <span></span><span></span><span></span>
+            </div>
+        </div>
+        <div class="menu" id="menu-mobile"><a class="menu-item" href="/posts/" title="Posts">Posts</a><a class="menu-item" href="/categories/" title="Categories">Categories</a><a class="menu-item" href="/about/" title="About">About</a><a href="javascript:void(0);" class="menu-item theme-switch" title="Switch Theme">
+                <i class="fas fa-adjust fa-fw" aria-hidden="true"></i>
+            </a></div>
+    </div>
+</header><main class="main">
+                <div class="container"><div class="toc" id="toc-auto">
+            <h2 class="toc-title">Contents</h2>
+            <div class="toc-content" id="toc-content-auto"></div>
+        </div><article class="page single"><h1 class="single-title animate__animated animate__flipInX">DeadFace 2022 Forensics</h1><div class="post-meta">
+            <div class="post-meta-line"><span class="post-author"><a href="/" title="Author" rel="author" class="author"><i class="fas fa-user-circle fa-fw" aria-hidden="true"></i>Author</a></span>&nbsp;<span class="post-category">included in <a href="/categories/deadface2022/"><i class="far fa-folder fa-fw" aria-hidden="true"></i>DeadFace2022</a></span></div>
+            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw" aria-hidden="true"></i>&nbsp;<time datetime="2022-10-17">2022-10-17</time>&nbsp;<i class="fas fa-pencil-alt fa-fw" aria-hidden="true"></i>&nbsp;424 words&nbsp;
+                <i class="far fa-clock fa-fw" aria-hidden="true"></i>&nbsp;2 minutes&nbsp;</div>
+        </div><div class="details toc" id="toc-static"  data-kept="">
+                <div class="details-summary toc-title">
+                    <span>Contents</span>
+                    <span><i class="details-icon fas fa-angle-right" aria-hidden="true"></i></span>
+                </div>
+                <div class="details-content toc-content" id="toc-content-static"><nav id="TableOfContents">
+  <ul>
+    <li><a href="#first-strike">First strike</a></li>
+    <li><a href="#toolbox">ToolBox</a></li>
+    <li><a href="#grave-digger-1">Grave Digger 1</a></li>
+    <li><a href="#agents-of-chaos">Agents of Chaos</a></li>
+    <li><a href="#iterations">Iterations</a></li>
+    <li><a href="#submission">Submission</a></li>
+  </ul>
+</nav></div>
+            </div><div class="content" id="content"><h1 id="deadface-2022-forensics">DeadFace 2022 Forensics</h1>
+<h2 id="first-strike">First strike</h2>
+<p><code>POINTS : 10</code></p>
+<blockquote>
+<p>There was a cyberattack on ESU&rsquo;s website on July 27th. ESU IT staff collected data from the attack and need your help sifting through it.</p>
+<p>What IP Address did the attack originate from?</p>
+<p>Submit the flag as: flag{ip_address}. Example: flag{192.168.1.1}.</p>
+<p>Download access.log
+SHA1: b71d59350a6802b9fc1b772a76388ca250ba6d89</p>
+<p>Download error.log
+SHA1: 8fc2c50a21e7133c319c6bb4df597cc707f21c91</p>
+</blockquote>
+<p>In this challenge we have to find IP of the attacker using files <code>access.log</code> and <code>error.log</code>.</p>
+<p>This one is very easy. When we open the &ldquo;access.log&rdquo; file, the IP address is immediately visible in first line.</p>
+<p>Flag: <code>flag{165.227.73.138}</code></p>
+<hr>
+<h2 id="toolbox">ToolBox</h2>
+<p><code>POINTS : 15</code></p>
+<blockquote>
+<p>What tool was used when the attack started at 2022-07-27 14:13 UTC?</p>
+<p>Submit the flag as flag{tool}. Example: flag{notepad}.</p>
+<p>Use the files from First Strike.</p>
+</blockquote>
+<p>On third line in <code>access.log</code> we can see that attacker used NMAP to scan the website.</p>
+<p>Flag: <code>flag{NMAP}</code></p>
+<hr>
+<h2 id="grave-digger-1">Grave Digger 1</h2>
+<p><code>POINTS 15</code></p>
+<blockquote>
+<p>Turbo Tactical has gained access to a machine owned by DEADFACE. It appears crypto_vamp, a new recruit at DEADFACE, used a weak password for his account on d34th&rsquo;s machine. See if you can find the flag associated with &ldquo;Grave Digger 1&rdquo;</p>
+<p>env.deadface.io
+Password: 123456789q</p>
+</blockquote>
+<p>I didn&rsquo;t solve that challenge in time , because I didn&rsquo;t think about looking at <code>env</code>. While looking for this flag I&rsquo;ve found a flag for <code>Grave Digger 2</code> by accident.</p>
+<p>We log in to the machine using credentials:</p>
+<p><code>Login : crypto_vamp</code>
+<code>Password: 123456789q</code></p>
+<p>After logging in we just use command <code>env</code> and we get the flag.</p>
+<p>Flag: <code>flag{d34dF4C3_en1roN_v4r}</code></p>
+<hr>
+<h2 id="agents-of-chaos">Agents of Chaos</h2>
+<blockquote>
+<p>What is the first user agent of the second scanning tool used by the attacker?</p>
+<p>Submit the flag as flag{user agent string}.</p>
+<p>Use the files from First Strike.</p>
+</blockquote>
+<p>In this challenge we need to find a user-agent strings from 2nd tool used by the attacker.</p>
+<p>We can notice a new tool being used on line 70 of the same file we used for the previous challenges.</p>
+<p>Flag: <code>flag{Mozilla/5.00 (Nikto/2.1.6) (Evasions:None) (Test:Port Check)}</code></p>
+<hr>
+<h2 id="iterations">Iterations</h2>
+<blockquote>
+<p>What is the name of the tool that likely resulted in DEADFACE acquiring login credentials to ESU&rsquo;s website?</p>
+<p>Submit the flag as flag{tool}.</p>
+<p>Use the files from First Strike.</p>
+</blockquote>
+<p>We can see that the attacker has used a new tool to brute-force the <code>login.php</code> page&rsquo;s credentials in line <code>5881</code>.</p>
+<p>Flag: <code>flag{Hydra}</code></p>
+<hr>
+<h2 id="submission">Submission</h2>
+<blockquote>
+<p>What artifact did DEADFACE place onto ESU&rsquo;s website to gain access to the filesystem?</p>
+<p>Submit the flag as flag{filename}.</p>
+<p>Use the files from First Strike.</p>
+</blockquote>
+<p>Near the end of the <code>access.log</code> in line <code>7442</code> we see that attacker uploaded the file and then accessed it.</p>
+<p>Flag: <code>flag{info.php}</code></p>
+</div><div class="post-footer" id="post-footer">
+    <div class="post-info">
+        <div class="post-info-line">
+            <div class="post-info-mod">
+                <span>Updated on 2022-10-17</span>
+            </div></div>
+        <div class="post-info-line">
+            <div class="post-info-md"></div>
+            <div class="post-info-share">
+                <span><a href="javascript:void(0);" title="Share on Twitter" data-sharer="twitter" data-url="https://kennyhh.github.io/posts/deadface2022/deadfaceforensics/" data-title="DeadFace 2022 Forensics"><i class="fab fa-twitter fa-fw" aria-hidden="true"></i></a><a href="javascript:void(0);" title="Share on Facebook" data-sharer="facebook" data-url="https://kennyhh.github.io/posts/deadface2022/deadfaceforensics/"><i class="fab fa-facebook-square fa-fw" aria-hidden="true"></i></a><a href="javascript:void(0);" title="Share on Hacker News" data-sharer="hackernews" data-url="https://kennyhh.github.io/posts/deadface2022/deadfaceforensics/" data-title="DeadFace 2022 Forensics"><i class="fab fa-hacker-news fa-fw" aria-hidden="true"></i></a><a href="javascript:void(0);" title="Share on Line" data-sharer="line" data-url="https://kennyhh.github.io/posts/deadface2022/deadfaceforensics/" data-title="DeadFace 2022 Forensics"><i data-svg-src="https://cdn.jsdelivr.net/npm/simple-icons@7.3.0/icons/line.svg" aria-hidden="true"></i></a><a href="javascript:void(0);" title="Share on 微博" data-sharer="weibo" data-url="https://kennyhh.github.io/posts/deadface2022/deadfaceforensics/" data-title="DeadFace 2022 Forensics"><i class="fab fa-weibo fa-fw" aria-hidden="true"></i></a></span>
+            </div>
+        </div>
+    </div>
+
+    <div class="post-info-more">
+        <section class="post-tags"></section>
+        <section>
+            <span><a href="javascript:void(0);" onclick="window.history.back();">Back</a></span>&nbsp;|&nbsp;<span><a href="/">Home</a></span>
+        </section>
+    </div>
+
+    <div class="post-nav"></div>
+</div>
+</article></div>
+            </main><footer class="footer">
+        <div class="footer-container"><div class="footer-line">Powered by <a href="https://gohugo.io/" target="_blank" rel="noopener noreffer" title="Hugo 0.104.3">Hugo</a> | Theme - <a href="https://github.com/dillonzq/LoveIt" target="_blank" rel="noopener noreffer" title="LoveIt 0.2.11"><i class="far fa-kiss-wink-heart fa-fw" aria-hidden="true"></i> LoveIt</a>
+                </div><div class="footer-line" itemscope itemtype="http://schema.org/CreativeWork"><i class="far fa-copyright fa-fw" aria-hidden="true"></i><span itemprop="copyrightYear">2022</span><span class="author" itemprop="copyrightHolder">&nbsp;<a href="/" target="_blank"></a></span></div>
+        </div>
+    </footer></div>
+
+        <div id="fixed-buttons"><a href="#" id="back-to-top" class="fixed-button" title="Back to Top">
+                <i class="fas fa-arrow-up fa-fw" aria-hidden="true"></i>
+            </a><a href="#" id="view-comments" class="fixed-button" title="View Comments">
+                <i class="fas fa-comment fa-fw" aria-hidden="true"></i>
+            </a>
+        </div><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/lazysizes@5.3.2/lazysizes.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/clipboard@2.0.11/dist/clipboard.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/sharer.js@0.5.1/sharer.min.js"></script><script type="text/javascript">window.config={"code":{"copyTitle":"Copy to clipboard","maxShownLines":50},"comment":{}};</script><script type="text/javascript" src="/js/theme.min.js"></script></body>
+</html>
