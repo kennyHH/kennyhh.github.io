@@ -144,7 +144,7 @@ Run StegSeek once more, but this time it failed to provide the passwords.
 Let's try good old `strings`.
 
 ![scarystrings2](/images/deadface22stego/scary2strings.png "Scary 2 strings")
-![scarystrings3](/images/deadface22stego/scary3strings.png "Scary 2 strings")
+![scarystrings3](/images/deadface22stego/scary3strings.png "Scary 3 strings")
 
 I've uncovered two flags, however they appear to be encoded using some cipher. It's CyberChef time!
 
