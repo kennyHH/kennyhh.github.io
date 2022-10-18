@@ -93,9 +93,9 @@ In this challenge we get a gif file instead of usual jpg. It's safe to assume th
 
 Once again , we use StegSolve to find some useful information.
 
-We go to Analyse > Frame Browser and start flipping throgh the frames.
+We go to Analyse > Frame Browser and start flipping through the frames.
 
-![glitchframebrowser](/images/deadface22stego/stegsolvegif.png "Frame Browser")
+![glitchframebrowser](/images/deadface22stego/stegsolvedif.png "Frame Browser")
 
 We receive an HIT in frame 23/80! Although that flag is visible, it is difficult to read.
 
@@ -211,7 +211,7 @@ The flag is most likely hidden in the thumbnail.
 
 There are many ways and tools to extract it , but we can just simply zoom in the folder.
 
-{{< admonition type=tip title="TIP" open=true >}}
+{{< admonition type=tip title="This is a tip" open=true >}}
 You can use `exiftool` to extract the thumbnail.
 ```bash
 exiftool -b -ThumbnailImage 2C573 > thumbnail.jpg
@@ -254,7 +254,7 @@ At `13:59` minutes, I also heard some beeps that resembled morse code.
 Let's get to work and export the audio portion of the video using `ffmpeg`.
 
 ```bash
-ffmpeg -i farm.mp4 farm.mp3
+ffmpeg -i farm.mp4 farm2.mp3
 ```
 
 Let's put that `mp3` file into `SonicVisualiser` and turn on `Spectogram`.
@@ -267,7 +267,6 @@ All that's left to do is enter the information into an online decoder to deciphe
 
 ![farm](/images/deadface22stego/farmMorseDecoded.png "Farm morse Decoded") 
 
-We get a flag and sweet points. 
-
+We get our flag and sweet points. 
 
 Flag: `flag{IWILLBEAVENGEDSEVENFOLD}`
