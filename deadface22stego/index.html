@@ -40,7 +40,7 @@ Next we use strings to look for any clues."/>
         "mainEntityOfPage": {
             "@type": "WebPage",
             "@id": "http:\/\/kennyh.github.io\/deadface22stego\/"
-        },"genre": "posts","wordcount":  679 ,
+        },"genre": "posts","wordcount":  1104 ,
         "url": "http:\/\/kennyh.github.io\/deadface22stego\/","datePublished": "2022-10-17T13:56:36-04:00","dateModified": "2022-10-17T13:56:36-04:00","publisher": {
             "@type": "Organization",
             "name": ""},"author": {
@@ -114,8 +114,8 @@ Next we use strings to look for any clues."/>
             <div class="toc-content" id="toc-content-auto"></div>
         </div><article class="page single"><h1 class="single-title animate__animated animate__flipInX">DeadFace 2022 Stegonography</h1><div class="post-meta">
             <div class="post-meta-line"><span class="post-author"><a href="/" title="Author" rel="author" class="author"><i class="fas fa-user-circle fa-fw" aria-hidden="true"></i>KennyH</a></span>&nbsp;<span class="post-category">included in <a href="/categories/deadface2022/"><i class="far fa-folder fa-fw" aria-hidden="true"></i>DeadFace2022</a></span></div>
-            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw" aria-hidden="true"></i>&nbsp;<time datetime="2022-10-17">2022-10-17</time>&nbsp;<i class="fas fa-pencil-alt fa-fw" aria-hidden="true"></i>&nbsp;679 words&nbsp;
-                <i class="far fa-clock fa-fw" aria-hidden="true"></i>&nbsp;4 minutes&nbsp;</div>
+            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw" aria-hidden="true"></i>&nbsp;<time datetime="2022-10-17">2022-10-17</time>&nbsp;<i class="fas fa-pencil-alt fa-fw" aria-hidden="true"></i>&nbsp;1104 words&nbsp;
+                <i class="far fa-clock fa-fw" aria-hidden="true"></i>&nbsp;6 minutes&nbsp;</div>
         </div><div class="details toc" id="toc-static"  data-kept="">
                 <div class="details-summary toc-title">
                     <span>Contents</span>
@@ -132,7 +132,6 @@ Next we use strings to look for any clues."/>
   </ul>
 </nav></div>
             </div><div class="content" id="content"><h1 id="deadface-2022-forensics">DeadFace 2022 Forensics</h1>
-<img data-sizes="auto" data-src="/images/logo_deadface_ctf.png" class="lazyload" />
 <hr>
 <h2 id="the-goodest-boy">The Goodest Boy</h2>
 <p><code>POINTS : 20</code></p>
@@ -276,14 +275,14 @@ GIF. See if you can use your repertoire of tools to find the flag hidden in the 
     </figure></p>
 <p>Once again , we use StegSolve to find some useful information.</p>
 <p>We go to Analyse &gt; Frame Browser and start flipping throgh the frames.</p>
-<p><figure><a class="lightgallery" href="/images/deadface22stego/stegsolvedif.png" title="glitchframebrowser" data-thumbnail="/images/deadface22stego/stegsolvedif.png" data-sub-html="<h2>Frame Browser</h2><p>glitchframebrowser</p>">
+<p><figure><a class="lightgallery" href="/images/deadface22stego/stegsolvegif.png" title="glitchframebrowser" data-thumbnail="/images/deadface22stego/stegsolvegif.png" data-sub-html="<h2>Frame Browser</h2><p>glitchframebrowser</p>">
         <img
             class="lazyload"
             src="/svg/loading.min.svg"
-            data-src="/images/deadface22stego/stegsolvedif.png"
-            data-srcset="/images/deadface22stego/stegsolvedif.png, /images/deadface22stego/stegsolvedif.png 1.5x, /images/deadface22stego/stegsolvedif.png 2x"
+            data-src="/images/deadface22stego/stegsolvegif.png"
+            data-srcset="/images/deadface22stego/stegsolvegif.png, /images/deadface22stego/stegsolvegif.png 1.5x, /images/deadface22stego/stegsolvegif.png 2x"
             data-sizes="auto"
-            alt="/images/deadface22stego/stegsolvedif.png" />
+            alt="/images/deadface22stego/stegsolvegif.png" />
     </a><figcaption class="image-caption">Frame Browser</figcaption>
     </figure></p>
 <p>We receive an HIT in frame 23/80! Although that flag is visible, it is difficult to read.</p>
@@ -316,8 +315,7 @@ GIF. See if you can use your repertoire of tools to find the flag hidden in the 
     </a><figcaption class="image-caption">Files</figcaption>
     </figure></p>
 <p>Let&rsquo;s get to work !</p>
-<p>I&rsquo;ve run strings on all 3 files , but no results .</p>
-<p>So let&rsquo;s try <code>stegseek</code> with <code>rockyou.txt</code> passlist !</p>
+<p>I&rsquo;ve run strings on all 3 files , but no results . So let&rsquo;s try <code>stegseek</code> with <code>rockyou.txt</code> passlist !</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
@@ -365,7 +363,7 @@ GIF. See if you can use your repertoire of tools to find the flag hidden in the 
             alt="/images/deadface22stego/scary2strings.png" />
     </a><figcaption class="image-caption">Scary 2 strings</figcaption>
     </figure>
-<figure><a class="lightgallery" href="/images/deadface22stego/scary3strings.png" title="scarystrings3" data-thumbnail="/images/deadface22stego/scary3strings.png" data-sub-html="<h2>Scary 3 strings</h2><p>scarystrings3</p>">
+<figure><a class="lightgallery" href="/images/deadface22stego/scary3strings.png" title="scarystrings3" data-thumbnail="/images/deadface22stego/scary3strings.png" data-sub-html="<h2>Scary 2 strings</h2><p>scarystrings3</p>">
         <img
             class="lazyload"
             src="/svg/loading.min.svg"
@@ -373,7 +371,7 @@ GIF. See if you can use your repertoire of tools to find the flag hidden in the 
             data-srcset="/images/deadface22stego/scary3strings.png, /images/deadface22stego/scary3strings.png 1.5x, /images/deadface22stego/scary3strings.png 2x"
             data-sizes="auto"
             alt="/images/deadface22stego/scary3strings.png" />
-    </a><figcaption class="image-caption">Scary 3 strings</figcaption>
+    </a><figcaption class="image-caption">Scary 2 strings</figcaption>
     </figure></p>
 <p>I&rsquo;ve uncovered two flags, however they appear to be encoded using some cipher. It&rsquo;s CyberChef time!</p>
 <p><figure><a class="lightgallery" href="/images/deadface22stego/scarychef1.png" title="scarychef" data-thumbnail="/images/deadface22stego/scarychef1.png" data-sub-html="<h2>CyberChef</h2><p>scarychef</p>">
@@ -388,8 +386,8 @@ GIF. See if you can use your repertoire of tools to find the flag hidden in the 
     </figure></p>
 <p><code>flag{veF9pbmFib3hfaW5hYm94X2luYWJve}</code> &gt; <code>ox_inabox_inabox_inabo</code>
 <code>flag{ZmxhZ3tpbmFib3hfaW5hYm94X2luYWJ}</code> &gt; <code>flag{inabox_inabox_inab</code></p>
-<p>1st flag was encoded using Base64 and rotated right twice.</p>
-<p>2nd flag was encoded using Base64.</p>
+<p>1st flag was encoded using Base64 and rotated right twice.
+2nd flag was encoded using Base64.</p>
 <p>After trying for five minutes to find the remaining piece of the flag, I gave up. I started to wonder if it was the same word repeated a few times.</p>
 <p>I submitted the flag: <code>flag{inabox_inabox_inabox_inabox_inabox_inabox_inabox_inabox}</code> and it worked !</p>
 <p><img
@@ -413,11 +411,153 @@ GIF. See if you can use your repertoire of tools to find the flag hidden in the 
 <hr>
 <h2 id="missing-home">Missing home</h2>
 <p><code>POINTS : 100</code></p>
-<p>Flag: <code>flag{xxx}</code></p>
+<blockquote>
+<p>We intercepted this email being passed by a DEADFACE member. We tried some steghide, but that didn&rsquo;t work. Help us out here!</p>
+</blockquote>
+<p>We get this image in the challenge.</p>
+<p><figure><a class="lightgallery" href="/images/deadface22stego/missinghome.jpg" title="scarydiscord" data-thumbnail="/images/deadface22stego/missinghome.jpg" data-sub-html="<h2>Missing Home</h2><p>scarydiscord</p>">
+        <img
+            class="lazyload"
+            src="/svg/loading.min.svg"
+            data-src="/images/deadface22stego/missinghome.jpg"
+            data-srcset="/images/deadface22stego/missinghome.jpg, /images/deadface22stego/missinghome.jpg 1.5x, /images/deadface22stego/missinghome.jpg 2x"
+            data-sizes="auto"
+            alt="/images/deadface22stego/missinghome.jpg" />
+    </a><figcaption class="image-caption">Missing Home</figcaption>
+    </figure></p>
+<p>The description claims that they attempted to run <code>steghide</code> on the file but that it failed; however, just to be sure, I will try <code>stegseek</code> with usual <code>rockyou.txt</code> passlist.</p>
+<p><figure><a class="lightgallery" href="/images/deadface22stego/missinghSteghide.png" title="Steghide" data-thumbnail="/images/deadface22stego/missinghSteghide.png" data-sub-html="<h2>Steghide</h2><p>Steghide</p>">
+        <img
+            class="lazyload"
+            src="/svg/loading.min.svg"
+            data-src="/images/deadface22stego/missinghSteghide.png"
+            data-srcset="/images/deadface22stego/missinghSteghide.png, /images/deadface22stego/missinghSteghide.png 1.5x, /images/deadface22stego/missinghSteghide.png 2x"
+            data-sizes="auto"
+            alt="/images/deadface22stego/missinghSteghide.png" />
+    </a><figcaption class="image-caption">Steghide</figcaption>
+    </figure></p>
+<p>Well, that was expected.</p>
+<p>Let&rsquo;s try using <code>binwalk</code> to see if that image contains any hidden files.</p>
+<p><figure><a class="lightgallery" href="/images/deadface22stego/missinghBinwalk.png" title="binwalk" data-thumbnail="/images/deadface22stego/missinghBinwalk.png" data-sub-html="<h2>Binwalk</h2><p>binwalk</p>">
+        <img
+            class="lazyload"
+            src="/svg/loading.min.svg"
+            data-src="/images/deadface22stego/missinghBinwalk.png"
+            data-srcset="/images/deadface22stego/missinghBinwalk.png, /images/deadface22stego/missinghBinwalk.png 1.5x, /images/deadface22stego/missinghBinwalk.png 2x"
+            data-sizes="auto"
+            alt="/images/deadface22stego/missinghBinwalk.png" />
+    </a><figcaption class="image-caption">Binwalk</figcaption>
+    </figure></p>
+<p><strong>BINGO !</strong></p>
+<p>Now we need to extract that data.</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">binwalk --dd<span class="o">=</span><span class="s1">&#39;.*&#39;</span> missinghome.jpg 
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p><figure><a class="lightgallery" href="/images/deadface22stego/missinghBinwalkExtract.png" title="binwalk" data-thumbnail="/images/deadface22stego/missinghBinwalkExtract.png" data-sub-html="<h2>Binwalk Extract</h2><p>binwalk</p>">
+        <img
+            class="lazyload"
+            src="/svg/loading.min.svg"
+            data-src="/images/deadface22stego/missinghBinwalkExtract.png"
+            data-srcset="/images/deadface22stego/missinghBinwalkExtract.png, /images/deadface22stego/missinghBinwalkExtract.png 1.5x, /images/deadface22stego/missinghBinwalkExtract.png 2x"
+            data-sizes="auto"
+            alt="/images/deadface22stego/missinghBinwalkExtract.png" />
+    </a><figcaption class="image-caption">Binwalk Extract</figcaption>
+    </figure></p>
+<p>We obtained a file named <code>2C573</code> from the <code>binwalk</code> extraction that resembles a flag, but when we view it in <code>Ristretto Image Viewer</code> a different image is displayed.</p>
+<p><figure><a class="lightgallery" href="/images/deadface22stego/missinghRistretto.png" title="ristretto" data-thumbnail="/images/deadface22stego/missinghRistretto.png" data-sub-html="<h2>Ristretto</h2><p>ristretto</p>">
+        <img
+            class="lazyload"
+            src="/svg/loading.min.svg"
+            data-src="/images/deadface22stego/missinghRistretto.png"
+            data-srcset="/images/deadface22stego/missinghRistretto.png, /images/deadface22stego/missinghRistretto.png 1.5x, /images/deadface22stego/missinghRistretto.png 2x"
+            data-sizes="auto"
+            alt="/images/deadface22stego/missinghRistretto.png" />
+    </a><figcaption class="image-caption">Ristretto</figcaption>
+    </figure></p>
+<p>The flag is most likely hidden in the thumbnail.</p>
+<p>There are many ways and tools to extract it , but we can just simply zoom in the folder.</p>
+<div class="details admonition tip open">
+        <div class="details-summary admonition-title">
+            <i class="icon fas fa-lightbulb fa-fw" aria-hidden="true"></i>TIP<i class="details-icon fas fa-angle-right fa-fw" aria-hidden="true"></i>
+        </div>
+        <div class="details-content">
+            <div class="admonition-content"><p>You can use <code>exiftool</code> to extract the thumbnail.</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">exiftool -b -ThumbnailImage 2C573 &gt; thumbnail.jpg
+</span></span></code></pre></td></tr></table>
+</div>
+</div></div>
+        </div>
+    </div>
+<p><figure><a class="lightgallery" href="/images/deadface22stego/missinghflag.png" title="missingHflag" data-thumbnail="/images/deadface22stego/missinghflag.png" data-sub-html="<h2>Missing Home Flag</h2><p>missingHflag</p>">
+        <img
+            class="lazyload"
+            src="/svg/loading.min.svg"
+            data-src="/images/deadface22stego/missinghflag.png"
+            data-srcset="/images/deadface22stego/missinghflag.png, /images/deadface22stego/missinghflag.png 1.5x, /images/deadface22stego/missinghflag.png 2x"
+            data-sizes="auto"
+            alt="/images/deadface22stego/missinghflag.png" />
+    </a><figcaption class="image-caption">Missing Home Flag</figcaption>
+    </figure></p>
+<p><strong>Voilà !</strong></p>
+<p>Flag: <code>flag{s3cr3ts_don'T_stAy_bur13d_L0nG}</code></p>
 <hr>
 <h2 id="the-farm">The Farm</h2>
 <p><code>POINTS : 100</code></p>
-<p>Flag: <code>flag{xxx}</code></p>
+<blockquote>
+<p>We found this video on one of the laptops recovered from Lytton Lab&rsquo;s secret lab area in the boiler room of the old Lytton, IN school building. It is very strange, cryptic, and unsettling.</p>
+<p>This video starts as a simple visit to a farm, but it quickly takes a dark turn when the videographer visits an old abandoned house deep in the woods at night with a mysterious companion.</p>
+<p>There is a strange figure appearing to convey a secret message. Recover the message and enter it as the flag.</p>
+<p>Enter the flag in all caps, with no spaces or punctuation, like this: flag{ALLCAPSNOSPACES}.</p>
+<p>Pick one of the following video files based on your bandwidth and processing power. They are the same video with different resolutions. The videos are MP4 H.264 format.</p>
+</blockquote>
+<p>This challenge is different from previous challenges since we receive <code>.mp4</code> file instead of usual image.</p>
+<p>Given that Halloween is quickly approaching, the video&rsquo;s mysterious and eerie nature is fantastic.</p>
+<p>I&rsquo;ve scrolled through the video and found some weird noise around <code>12:12</code> minute.</p>
+<p>At <code>13:59</code> minutes, I also heard some beeps that resembled morse code.</p>
+<p>Let&rsquo;s get to work and export the audio portion of the video using <code>ffmpeg</code>.</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">ffmpeg -i farm.mp4 farm.mp3
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>Let&rsquo;s put that <code>mp3</code> file into <code>SonicVisualiser</code> and turn on <code>Spectogram</code>.</p>
+<p><figure><a class="lightgallery" href="/images/deadface22stego/farmMorse.png" title="farm" data-thumbnail="/images/deadface22stego/farmMorse.png" data-sub-html="<h2>Farm morse Code</h2><p>farm</p>">
+        <img
+            class="lazyload"
+            src="/svg/loading.min.svg"
+            data-src="/images/deadface22stego/farmMorse.png"
+            data-srcset="/images/deadface22stego/farmMorse.png, /images/deadface22stego/farmMorse.png 1.5x, /images/deadface22stego/farmMorse.png 2x"
+            data-sizes="auto"
+            alt="/images/deadface22stego/farmMorse.png" />
+    </a><figcaption class="image-caption">Farm morse Code</figcaption>
+    </figure></p>
+<p>It&rsquo;s a morse code, as I had suspected.</p>
+<p>All that&rsquo;s left to do is enter the information into an online decoder to decipher it.</p>
+<p><figure><a class="lightgallery" href="/images/deadface22stego/farmMorseDecoded.png" title="farm" data-thumbnail="/images/deadface22stego/farmMorseDecoded.png" data-sub-html="<h2>Farm morse Decoded</h2><p>farm</p>">
+        <img
+            class="lazyload"
+            src="/svg/loading.min.svg"
+            data-src="/images/deadface22stego/farmMorseDecoded.png"
+            data-srcset="/images/deadface22stego/farmMorseDecoded.png, /images/deadface22stego/farmMorseDecoded.png 1.5x, /images/deadface22stego/farmMorseDecoded.png 2x"
+            data-sizes="auto"
+            alt="/images/deadface22stego/farmMorseDecoded.png" />
+    </a><figcaption class="image-caption">Farm morse Decoded</figcaption>
+    </figure></p>
+<p>We get a flag and sweet points.</p>
+<p>Flag: <code>flag{IWILLBEAVENGEDSEVENFOLD}</code></p>
 </div><div class="post-footer" id="post-footer">
     <div class="post-info">
         <div class="post-info-line">
