@@ -6,11 +6,12 @@
         <meta name="robots" content="noodp" />
         <title>DeadFace 2022 Stegonography - KennyH Blog</title><meta name="Description" content="Writeups for TryHackMe , HackTheBox, CTF&#39;s and some tools / techniques"><meta property="og:title" content="DeadFace 2022 Stegonography" />
 <meta property="og:description" content="DeadFace 2022 Forensics The Goodest Boy POINTS : 20
-We found this image on Ghost Town. We think bumpyhassan hid some information here. Can you see what information he hid?
+Challenge Description We found this image on Ghost Town.
+We think bumpyhassan hid some information here.
+Can you see what information he hid?
 In this challenge we get a picture of a dog with some data hidden in it.
 Doggo First thing we do is check if it&rsquo;s a JPG file.
-Doggo File Check Looks like it&rsquo;s a proper jpg file .
-Next we use strings to look for any clues." />
+Doggo File Check Looks like it&rsquo;s a proper jpg file ." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="http://kennyh.github.io/deadface22stego/" /><meta property="og:image" content="http://kennyh.github.io/logo.png"/><meta property="article:section" content="posts" />
 <meta property="article:published_time" content="2022-10-17T13:56:36-04:00" />
@@ -21,11 +22,12 @@ Next we use strings to look for any clues." />
 
 <meta name="twitter:title" content="DeadFace 2022 Stegonography"/>
 <meta name="twitter:description" content="DeadFace 2022 Forensics The Goodest Boy POINTS : 20
-We found this image on Ghost Town. We think bumpyhassan hid some information here. Can you see what information he hid?
+Challenge Description We found this image on Ghost Town.
+We think bumpyhassan hid some information here.
+Can you see what information he hid?
 In this challenge we get a picture of a dog with some data hidden in it.
 Doggo First thing we do is check if it&rsquo;s a JPG file.
-Doggo File Check Looks like it&rsquo;s a proper jpg file .
-Next we use strings to look for any clues."/>
+Doggo File Check Looks like it&rsquo;s a proper jpg file ."/>
 <meta name="application-name" content="My cool site">
 <meta name="apple-mobile-web-app-title" content="My cool site"><meta name="theme-color" content="#ffffff"><meta name="msapplication-TileColor" content="#da532c"><link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
         <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
@@ -40,7 +42,11 @@ Next we use strings to look for any clues."/>
         "mainEntityOfPage": {
             "@type": "WebPage",
             "@id": "http:\/\/kennyh.github.io\/deadface22stego\/"
+<<<<<<< HEAD
         },"genre": "posts","wordcount":  1107 ,
+=======
+        },"genre": "posts","wordcount":  1116 ,
+>>>>>>> 5573b46 (mistakes man)
         "url": "http:\/\/kennyh.github.io\/deadface22stego\/","datePublished": "2022-10-17T13:56:36-04:00","dateModified": "2022-10-17T13:56:36-04:00","publisher": {
             "@type": "Organization",
             "name": ""},"author": {
@@ -114,7 +120,11 @@ Next we use strings to look for any clues."/>
             <div class="toc-content" id="toc-content-auto"></div>
         </div><article class="page single"><h1 class="single-title animate__animated animate__flipInX">DeadFace 2022 Stegonography</h1><div class="post-meta">
             <div class="post-meta-line"><span class="post-author"><a href="/" title="Author" rel="author" class="author"><i class="fas fa-user-circle fa-fw" aria-hidden="true"></i>KennyH</a></span>&nbsp;<span class="post-category">included in <a href="/categories/deadface2022/"><i class="far fa-folder fa-fw" aria-hidden="true"></i>DeadFace2022</a></span></div>
+<<<<<<< HEAD
             <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw" aria-hidden="true"></i>&nbsp;<time datetime="2022-10-17">2022-10-17</time>&nbsp;<i class="fas fa-pencil-alt fa-fw" aria-hidden="true"></i>&nbsp;1107 words&nbsp;
+=======
+            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw" aria-hidden="true"></i>&nbsp;<time datetime="2022-10-17">2022-10-17</time>&nbsp;<i class="fas fa-pencil-alt fa-fw" aria-hidden="true"></i>&nbsp;1116 words&nbsp;
+>>>>>>> 5573b46 (mistakes man)
                 <i class="far fa-clock fa-fw" aria-hidden="true"></i>&nbsp;6 minutes&nbsp;</div>
         </div><div class="details toc" id="toc-static"  data-kept="">
                 <div class="details-summary toc-title">
@@ -135,9 +145,17 @@ Next we use strings to look for any clues."/>
 <hr>
 <h2 id="the-goodest-boy">The Goodest Boy</h2>
 <p><code>POINTS : 20</code></p>
-<blockquote>
-<p>We found this image on Ghost Town. We think bumpyhassan hid some information here. Can you see what information he hid?</p>
-</blockquote>
+<div class="details admonition info open">
+        <div class="details-summary admonition-title">
+            <i class="icon fas fa-info-circle fa-fw" aria-hidden="true"></i>Challenge Description<i class="details-icon fas fa-angle-right fa-fw" aria-hidden="true"></i>
+        </div>
+        <div class="details-content">
+            <div class="admonition-content"><p>We found this image on Ghost Town.</p>
+<p>We think bumpyhassan hid some information here.</p>
+<p>Can you see what information he hid?</p>
+</div>
+        </div>
+    </div>
 <p>In this challenge we get a picture of a dog with some data hidden in it.</p>
 <p><figure><a class="lightgallery" href="/images/deadface22stego/doggo.jpg" title="doggo" data-thumbnail="/images/deadface22stego/doggo.jpg" data-sub-html="<h2>Doggo</h2><p>doggo</p>">
         <img
@@ -217,9 +235,14 @@ Next we use strings to look for any clues."/>
 <hr>
 <h2 id="eye-know-do-you-">Eye Know ,Do You ?</h2>
 <p><code>POINTS : 20</code></p>
-<blockquote>
-<p>lamia415 sent a warning email to other De Monne employees with an image attached. The employees, however, can&rsquo;t figure out what the intended message&gt;is. Can you reveal the message and find the flag?</p>
-</blockquote>
+<div class="details admonition info open">
+        <div class="details-summary admonition-title">
+            <i class="icon fas fa-info-circle fa-fw" aria-hidden="true"></i>Challenge Description<i class="details-icon fas fa-angle-right fa-fw" aria-hidden="true"></i>
+        </div>
+        <div class="details-content">
+            <div class="admonition-content">lamia415 sent a warning email to other De Monne employees with an image attached. The employees, however, can&rsquo;t figure out what the intended message&gt;is. Can you reveal the message and find the flag?</div>
+        </div>
+    </div>
 <p>This is the image we receive in this challenge. Let&rsquo;s get to work.</p>
 <p><figure><a class="lightgallery" href="/images/deadface22stego/All_Seeing_Eye.jpg" title="eye" data-thumbnail="/images/deadface22stego/All_Seeing_Eye.jpg" data-sub-html="<h2>Stego Image</h2><p>eye</p>">
         <img
@@ -258,10 +281,15 @@ Next we use strings to look for any clues."/>
 <hr>
 <h2 id="lifes-a-glitch">Life&rsquo;s a Glitch</h2>
 <p><code>POINTS : 50</code></p>
-<blockquote>
-<p>Another one of De Monne&rsquo;s employees was compromised. DEADFACE left a GIF image of what looks like a glitched face. They claim there is a flag in the
-GIF. See if you can use your repertoire of tools to find the flag hidden in the GIF.</p>
-</blockquote>
+<div class="details admonition info open">
+        <div class="details-summary admonition-title">
+            <i class="icon fas fa-info-circle fa-fw" aria-hidden="true"></i>Challenge Description<i class="details-icon fas fa-angle-right fa-fw" aria-hidden="true"></i>
+        </div>
+        <div class="details-content">
+            <div class="admonition-content">Another one of De Monne&rsquo;s employees was compromised. DEADFACE left a GIF image of what looks like a glitched face. They claim there is a flag in the
+GIF. See if you can use your repertoire of tools to find the flag hidden in the GIF.</div>
+        </div>
+    </div>
 <p>In this challenge we get a gif file instead of usual jpg. It&rsquo;s safe to assume that flag is hidden in one of the frames.</p>
 <p><figure><a class="lightgallery" href="/images/deadface22stego/glitchedout.gif" title="glitch" data-thumbnail="/images/deadface22stego/glitchedout.gif" data-sub-html="<h2>Glitch gif</h2><p>glitch</p>">
         <img
@@ -300,9 +328,14 @@ GIF. See if you can use your repertoire of tools to find the flag hidden in the 
 <hr>
 <h2 id="holiday-nesting-doll">Holiday Nesting Doll</h2>
 <p><code>POINTS : 50</code></p>
-<blockquote>
-<p>Holidays are a headache and this one is no different. The flag is fractured, can you find it? TIME is almost up! Santa is coming!</p>
-</blockquote>
+<div class="details admonition info open">
+        <div class="details-summary admonition-title">
+            <i class="icon fas fa-info-circle fa-fw" aria-hidden="true"></i>Challenge Description<i class="details-icon fas fa-angle-right fa-fw" aria-hidden="true"></i>
+        </div>
+        <div class="details-content">
+            <div class="admonition-content">Holidays are a headache and this one is no different. The flag is fractured, can you find it? TIME is almost up! Santa is coming!</div>
+        </div>
+    </div>
 <p>We get a <code>zip</code> file with 3 images inside it .</p>
 <p><figure><a class="lightgallery" href="/images/deadface22stego/nestingfiles.png" title="files" data-thumbnail="/images/deadface22stego/nestingfiles.png" data-sub-html="<h2>Files</h2><p>files</p>">
         <img
@@ -411,9 +444,20 @@ GIF. See if you can use your repertoire of tools to find the flag hidden in the 
 <hr>
 <h2 id="missing-home">Missing home</h2>
 <p><code>POINTS : 100</code></p>
+<<<<<<< HEAD
 <blockquote>
 <p>We intercepted this email being passed by a DEADFACE member. We tried some steghide, but that didn&rsquo;t work. Help us out here!</p>
 </blockquote>
+=======
+<div class="details admonition info open">
+        <div class="details-summary admonition-title">
+            <i class="icon fas fa-info-circle fa-fw" aria-hidden="true"></i>Challenge Description<i class="details-icon fas fa-angle-right fa-fw" aria-hidden="true"></i>
+        </div>
+        <div class="details-content">
+            <div class="admonition-content">We intercepted this email being passed by a DEADFACE member. We tried some steghide, but that didn&rsquo;t work. Help us out here!</div>
+        </div>
+    </div>
+>>>>>>> 5573b46 (mistakes man)
 <p>We get this image in the challenge.</p>
 <p><figure><a class="lightgallery" href="/images/deadface22stego/missinghome.jpg" title="scarydiscord" data-thumbnail="/images/deadface22stego/missinghome.jpg" data-sub-html="<h2>Missing Home</h2><p>scarydiscord</p>">
         <img
@@ -483,7 +527,11 @@ GIF. See if you can use your repertoire of tools to find the flag hidden in the 
 <p>There are many ways and tools to extract it , but we can just simply zoom in the folder.</p>
 <div class="details admonition tip open">
         <div class="details-summary admonition-title">
+<<<<<<< HEAD
             <i class="icon fas fa-lightbulb fa-fw" aria-hidden="true"></i>This is a tip<i class="details-icon fas fa-angle-right fa-fw" aria-hidden="true"></i>
+=======
+            <i class="icon fas fa-lightbulb fa-fw" aria-hidden="true"></i>TIP<i class="details-icon fas fa-angle-right fa-fw" aria-hidden="true"></i>
+>>>>>>> 5573b46 (mistakes man)
         </div>
         <div class="details-content">
             <div class="admonition-content"><p>You can use <code>exiftool</code> to extract the thumbnail.</p>
@@ -513,6 +561,7 @@ GIF. See if you can use your repertoire of tools to find the flag hidden in the 
 <hr>
 <h2 id="the-farm">The Farm</h2>
 <p><code>POINTS : 100</code></p>
+<<<<<<< HEAD
 <blockquote>
 <p>We found this video on one of the laptops recovered from Lytton Lab&rsquo;s secret lab area in the boiler room of the old Lytton, IN school building. It is very strange, cryptic, and unsettling.</p>
 <p>This video starts as a simple visit to a farm, but it quickly takes a dark turn when the videographer visits an old abandoned house deep in the woods at night with a mysterious companion.</p>
@@ -520,6 +569,21 @@ GIF. See if you can use your repertoire of tools to find the flag hidden in the 
 <p>Enter the flag in all caps, with no spaces or punctuation, like this: flag{ALLCAPSNOSPACES}.</p>
 <p>Pick one of the following video files based on your bandwidth and processing power. They are the same video with different resolutions. The videos are MP4 H.264 format.</p>
 </blockquote>
+=======
+<div class="details admonition info open">
+        <div class="details-summary admonition-title">
+            <i class="icon fas fa-info-circle fa-fw" aria-hidden="true"></i>Challenge Description<i class="details-icon fas fa-angle-right fa-fw" aria-hidden="true"></i>
+        </div>
+        <div class="details-content">
+            <div class="admonition-content"><p>We found this video on one of the laptops recovered from Lytton Lab&rsquo;s secret lab area in the boiler room of the old Lytton, IN school building. It is very strange, cryptic, and unsettling.</p>
+<p>This video starts as a simple visit to a farm, but it quickly takes a dark turn when the videographer visits an old abandoned house deep in the woods at night with a mysterious companion.</p>
+<p>here is a strange figure appearing to convey a secret message. Recover the message and enter it as the flag.</p>
+<p>Enter the flag in all caps, with no spaces or punctuation, like this: flag{ALLCAPSNOSPACES}.</p>
+<p>Pick one of the following video files based on your bandwidth and processing power. They are the same video with different resolutions. The videos are MP4 H.264 format.</p>
+</div>
+        </div>
+    </div>
+>>>>>>> 5573b46 (mistakes man)
 <p>This challenge is different from previous challenges since we receive <code>.mp4</code> file instead of usual image.</p>
 <p>Given that Halloween is quickly approaching, the video&rsquo;s mysterious and eerie nature is fantastic.</p>
 <p>I&rsquo;ve scrolled through the video and found some weird noise around <code>12:12</code> minute.</p>

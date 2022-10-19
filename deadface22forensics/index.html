@@ -6,12 +6,11 @@
         <meta name="robots" content="noodp" />
         <title>DeadFace 2022 Forensics - KennyH Blog</title><meta name="Description" content="Writeups for TryHackMe , HackTheBox, CTF&#39;s and some tools / techniques"><meta property="og:title" content="DeadFace 2022 Forensics" />
 <meta property="og:description" content="DeadFace 2022 Forensics First strike POINTS : 10
-There was a cyberattack on ESU&rsquo;s website on July 27th. ESU IT staff collected data from the attack and need your help sifting through it.
+Challenge Description There was a cyberattack on ESU&rsquo;s website on July 27th. ESU IT staff collected data from the attack and need your help sifting through it.
 What IP Address did the attack originate from?
 Submit the flag as: flag{ip_address}. Example: flag{192.168.1.1}.
-Download access.log SHA1: b71d59350a6802b9fc1b772a76388ca250ba6d89
-Download error.log SHA1: 8fc2c50a21e7133c319c6bb4df597cc707f21c91
-In this challenge we have to find IP of the attacker using files access.log and error." />
+In this challenge we have to find IP of the attacker using files access.log and error.log.
+This one is very easy." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="http://kennyh.github.io/deadface22forensics/" /><meta property="og:image" content="http://kennyh.github.io/logo.png"/><meta property="article:section" content="posts" />
 <meta property="article:published_time" content="2022-10-16T13:56:36-04:00" />
@@ -22,12 +21,11 @@ In this challenge we have to find IP of the attacker using files access.log and 
 
 <meta name="twitter:title" content="DeadFace 2022 Forensics"/>
 <meta name="twitter:description" content="DeadFace 2022 Forensics First strike POINTS : 10
-There was a cyberattack on ESU&rsquo;s website on July 27th. ESU IT staff collected data from the attack and need your help sifting through it.
+Challenge Description There was a cyberattack on ESU&rsquo;s website on July 27th. ESU IT staff collected data from the attack and need your help sifting through it.
 What IP Address did the attack originate from?
 Submit the flag as: flag{ip_address}. Example: flag{192.168.1.1}.
-Download access.log SHA1: b71d59350a6802b9fc1b772a76388ca250ba6d89
-Download error.log SHA1: 8fc2c50a21e7133c319c6bb4df597cc707f21c91
-In this challenge we have to find IP of the attacker using files access.log and error."/>
+In this challenge we have to find IP of the attacker using files access.log and error.log.
+This one is very easy."/>
 <meta name="application-name" content="My cool site">
 <meta name="apple-mobile-web-app-title" content="My cool site"><meta name="theme-color" content="#ffffff"><meta name="msapplication-TileColor" content="#da532c"><link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
         <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
@@ -42,8 +40,13 @@ In this challenge we have to find IP of the attacker using files access.log and 
         "mainEntityOfPage": {
             "@type": "WebPage",
             "@id": "http:\/\/kennyh.github.io\/deadface22forensics\/"
+<<<<<<< HEAD
         },"genre": "posts","wordcount":  440 ,
         "url": "http:\/\/kennyh.github.io\/deadface22forensics\/","datePublished": "2022-10-16T13:56:36-04:00","dateModified": "2022-10-16T13:56:36-04:00","publisher": {
+=======
+        },"genre": "posts","wordcount":  446 ,
+        "url": "http:\/\/kennyh.github.io\/deadface22forensics\/","datePublished": "2022-10-17T11:52:40-04:00","dateModified": "2022-10-17T11:52:40-04:00","publisher": {
+>>>>>>> 5573b46 (mistakes man)
             "@type": "Organization",
             "name": ""},"author": {
                 "@type": "Person",
@@ -116,7 +119,11 @@ In this challenge we have to find IP of the attacker using files access.log and 
             <div class="toc-content" id="toc-content-auto"></div>
         </div><article class="page single"><h1 class="single-title animate__animated animate__flipInX">DeadFace 2022 Forensics</h1><div class="post-meta">
             <div class="post-meta-line"><span class="post-author"><a href="/" title="Author" rel="author" class="author"><i class="fas fa-user-circle fa-fw" aria-hidden="true"></i>KennyH</a></span>&nbsp;<span class="post-category">included in <a href="/categories/deadface2022/"><i class="far fa-folder fa-fw" aria-hidden="true"></i>DeadFace2022</a></span></div>
+<<<<<<< HEAD
             <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw" aria-hidden="true"></i>&nbsp;<time datetime="2022-10-16">2022-10-16</time>&nbsp;<i class="fas fa-pencil-alt fa-fw" aria-hidden="true"></i>&nbsp;440 words&nbsp;
+=======
+            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw" aria-hidden="true"></i>&nbsp;<time datetime="2022-10-17">2022-10-17</time>&nbsp;<i class="fas fa-pencil-alt fa-fw" aria-hidden="true"></i>&nbsp;446 words&nbsp;
+>>>>>>> 5573b46 (mistakes man)
                 <i class="far fa-clock fa-fw" aria-hidden="true"></i>&nbsp;3 minutes&nbsp;</div>
         </div><div class="details toc" id="toc-static"  data-kept="">
                 <div class="details-summary toc-title">
@@ -138,15 +145,17 @@ In this challenge we have to find IP of the attacker using files access.log and 
 <hr>
 <h2 id="first-strike">First strike</h2>
 <p><code>POINTS : 10</code></p>
-<blockquote>
-<p>There was a cyberattack on ESU&rsquo;s website on July 27th. ESU IT staff collected data from the attack and need your help sifting through it.</p>
+<div class="details admonition info open">
+        <div class="details-summary admonition-title">
+            <i class="icon fas fa-info-circle fa-fw" aria-hidden="true"></i>Challenge Description<i class="details-icon fas fa-angle-right fa-fw" aria-hidden="true"></i>
+        </div>
+        <div class="details-content">
+            <div class="admonition-content"><p>There was a cyberattack on ESU&rsquo;s website on July 27th. ESU IT staff collected data from the attack and need your help sifting through it.</p>
 <p>What IP Address did the attack originate from?</p>
 <p>Submit the flag as: flag{ip_address}. Example: flag{192.168.1.1}.</p>
-<p>Download access.log
-SHA1: b71d59350a6802b9fc1b772a76388ca250ba6d89</p>
-<p>Download error.log
-SHA1: 8fc2c50a21e7133c319c6bb4df597cc707f21c91</p>
-</blockquote>
+</div>
+        </div>
+    </div>
 <p>In this challenge we have to find IP of the attacker using files <code>access.log</code> and <code>error.log</code>.</p>
 <p>This one is very easy. When we open the &ldquo;access.log&rdquo; file, the IP address is immediately visible in first line.</p>
 <p><figure><a class="lightgallery" href="/images/deadface22forensics/first%20strike.png" title="firststrike" data-thumbnail="/images/deadface22forensics/first%20strike.png" data-sub-html="<h2>First Strike</h2><p>firststrike</p>">
@@ -163,11 +172,17 @@ SHA1: 8fc2c50a21e7133c319c6bb4df597cc707f21c91</p>
 <hr>
 <h2 id="toolbox">ToolBox</h2>
 <p><code>POINTS : 15</code></p>
-<blockquote>
-<p>What tool was used when the attack started at 2022-07-27 14:13 UTC?</p>
+<div class="details admonition info open">
+        <div class="details-summary admonition-title">
+            <i class="icon fas fa-info-circle fa-fw" aria-hidden="true"></i>Challenge Description<i class="details-icon fas fa-angle-right fa-fw" aria-hidden="true"></i>
+        </div>
+        <div class="details-content">
+            <div class="admonition-content"><p>What tool was used when the attack started at 2022-07-27 14:13 UTC?</p>
 <p>Submit the flag as flag{tool}. Example: flag{notepad}.</p>
 <p>Use the files from First Strike.</p>
-</blockquote>
+</div>
+        </div>
+    </div>
 <p>In line <code>3</code> in <code>access.log</code> we can see that attacker used NMAP to scan the website.</p>
 <p><figure><a class="lightgallery" href="/images/deadface22forensics/nmap.png" title="nmap" data-thumbnail="/images/deadface22forensics/nmap.png" data-sub-html="<h2>NMAP</h2><p>nmap</p>">
         <img
@@ -183,11 +198,16 @@ SHA1: 8fc2c50a21e7133c319c6bb4df597cc707f21c91</p>
 <hr>
 <h2 id="grave-digger-1">Grave Digger 1</h2>
 <p><code>POINTS 15</code></p>
-<blockquote>
-<p>Turbo Tactical has gained access to a machine owned by DEADFACE. It appears crypto_vamp, a new recruit at DEADFACE, used a weak password for his account on d34th&rsquo;s machine. See if you can find the flag associated with &ldquo;Grave Digger 1&rdquo;</p>
-<p>env.deadface.io
-Password: 123456789q</p>
-</blockquote>
+<div class="details admonition info open">
+        <div class="details-summary admonition-title">
+            <i class="icon fas fa-info-circle fa-fw" aria-hidden="true"></i>Challenge Description<i class="details-icon fas fa-angle-right fa-fw" aria-hidden="true"></i>
+        </div>
+        <div class="details-content">
+            <div class="admonition-content"><p>Turbo Tactical has gained access to a machine owned by DEADFACE. It appears crypto_vamp, a new recruit at DEADFACE, used a weak password for his account on d34th&rsquo;s machine. See if you can find the flag associated with &ldquo;Grave Digger 1&rdquo;</p>
+<p><code>Host :   env.deadface.io Password: 123456789q</code></p>
+</div>
+        </div>
+    </div>
 <p>I didn&rsquo;t solve that challenge in time , because I didn&rsquo;t think about looking at <code>env</code>. While looking for this flag I&rsquo;ve found a flag for <code>Grave Digger 2</code> by accident.</p>
 <p>We log in to the machine using credentials:</p>
 <p><code>Login : crypto_vamp</code>
@@ -207,11 +227,17 @@ Password: 123456789q</p>
 <hr>
 <h2 id="agents-of-chaos">Agents of Chaos</h2>
 <p><code>POINTS 25</code></p>
-<blockquote>
-<p>What is the first user agent of the second scanning tool used by the attacker?</p>
+<div class="details admonition info open">
+        <div class="details-summary admonition-title">
+            <i class="icon fas fa-info-circle fa-fw" aria-hidden="true"></i>Challenge Description<i class="details-icon fas fa-angle-right fa-fw" aria-hidden="true"></i>
+        </div>
+        <div class="details-content">
+            <div class="admonition-content"><p>What is the first user agent of the second scanning tool used by the attacker?</p>
 <p>Submit the flag as flag{user agent string}.</p>
 <p>Use the files from First Strike.</p>
-</blockquote>
+</div>
+        </div>
+    </div>
 <p>In this challenge we need to find a user-agent strings from 2nd tool used by the attacker.</p>
 <p>We can notice a new tool being used on line <code>70</code> of the same file we used for the previous challenges.</p>
 <p><figure><a class="lightgallery" href="/images/deadface22forensics/agentofchaos.png" title="toolbox" data-thumbnail="/images/deadface22forensics/agentofchaos.png" data-sub-html="<h2>Agent of Chaos</h2><p>toolbox</p>">
@@ -228,11 +254,17 @@ Password: 123456789q</p>
 <hr>
 <h2 id="iterations">Iterations</h2>
 <p><code>POINTS 25</code></p>
-<blockquote>
-<p>What is the name of the tool that likely resulted in DEADFACE acquiring login credentials to ESU&rsquo;s website?</p>
+<div class="details admonition info open">
+        <div class="details-summary admonition-title">
+            <i class="icon fas fa-info-circle fa-fw" aria-hidden="true"></i>Challenge Description<i class="details-icon fas fa-angle-right fa-fw" aria-hidden="true"></i>
+        </div>
+        <div class="details-content">
+            <div class="admonition-content"><p>What is the name of the tool that likely resulted in DEADFACE acquiring login credentials to ESU&rsquo;s website?</p>
 <p>Submit the flag as flag{tool}.</p>
 <p>Use the files from First Strike.</p>
-</blockquote>
+</div>
+        </div>
+    </div>
 <p>We can see that the attacker has used a new tool to brute-force the <code>login.php</code> page&rsquo;s credentials in line <code>5881</code>.</p>
 <p><figure><a class="lightgallery" href="/images/deadface22forensics/hydra.png" title="hydra" data-thumbnail="/images/deadface22forensics/hydra.png" data-sub-html="<h2>Hydra</h2><p>hydra</p>">
         <img
@@ -248,11 +280,17 @@ Password: 123456789q</p>
 <hr>
 <h2 id="submission">Submission</h2>
 <p><code>POINTS 40</code></p>
-<blockquote>
-<p>What artifact did DEADFACE place onto ESU&rsquo;s website to gain access to the filesystem?</p>
+<div class="details admonition info open">
+        <div class="details-summary admonition-title">
+            <i class="icon fas fa-info-circle fa-fw" aria-hidden="true"></i>Challenge Description<i class="details-icon fas fa-angle-right fa-fw" aria-hidden="true"></i>
+        </div>
+        <div class="details-content">
+            <div class="admonition-content"><p>What artifact did DEADFACE place onto ESU&rsquo;s website to gain access to the filesystem?</p>
 <p>Submit the flag as flag{filename}.</p>
 <p>Use the files from First Strike.</p>
-</blockquote>
+</div>
+        </div>
+    </div>
 <p>Near the end of the <code>access.log</code> in line <code>7442</code> we see that attacker uploaded the file and then accessed it.</p>
 <p><figure><a class="lightgallery" href="/images/deadface22forensics/submission.png" title="submission" data-thumbnail="/images/deadface22forensics/submission.png" data-sub-html="<h2>Submission</h2><p>submission</p>">
         <img
