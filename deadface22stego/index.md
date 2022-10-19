@@ -184,6 +184,7 @@ I've uncovered two flags, however they appear to be encoded using some cipher. I
 
 
 `flag{veF9pbmFib3hfaW5hYm94X2luYWJve}` > `ox_inabox_inabox_inabo`
+
 `flag{ZmxhZ3tpbmFib3hfaW5hYm94X2luYWJ}` > `flag{inabox_inabox_inab`
 
 1st flag was encoded using Base64 and rotated right twice. 
