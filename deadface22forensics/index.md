@@ -1,12 +1,12 @@
 # DeadFace 2022 Forensics
 
 
-# DeadFace 2022 Forensics
+
+# DeadFace 2022 Forensics 
+
+![firststrike](/images/deadface.png)
 
 
-<img data-sizes="auto" data-src="/images/logo_deadface_ctf.png" class="lazyload" />
-
----
 
 ## First strike
 
@@ -164,4 +164,7 @@ Near the end of the `access.log` in line `7442` we see that attacker uploaded th
 ![submission](/images/deadface22forensics/submission.png "Submission")
 
 Flag: `flag{info.php}`
+
+
+
 

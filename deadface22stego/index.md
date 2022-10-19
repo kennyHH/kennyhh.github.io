@@ -3,7 +3,7 @@
 
 # DeadFace 2022 Forensics 
 
-
+![firststrike](/images/deadface.png)
 
 ---
 
@@ -209,10 +209,6 @@ Flag: `flag{inabox_inabox_inabox_inabox_inabox_inabox_inabox_inabox}`
 
 `POINTS : 100`
 
-<<<<<<< HEAD
->We intercepted this email being passed by a DEADFACE member. We tried some steghide, but that didn't work. Help us out here!
-
-=======
 {{< admonition type=info title="Challenge Description" open=true >}}
 
 We intercepted this email being passed by a DEADFACE member. We tried some steghide, but that didn't work. Help us out here!
@@ -222,7 +218,6 @@ We intercepted this email being passed by a DEADFACE member. We tried some stegh
 
 
 
->>>>>>> 5573b46 (mistakes man)
 We get this image in the challenge.
 
 ![scarydiscord](/images/deadface22stego/missinghome.jpg "Missing Home")
@@ -255,11 +250,7 @@ The flag is most likely hidden in the thumbnail.
 
 There are many ways and tools to extract it , but we can just simply zoom in the folder.
 
-<<<<<<< HEAD
-{{< admonition type=tip title="This is a tip" open=true >}}
-=======
 {{< admonition type=tip title="TIP" open=true >}}
->>>>>>> 5573b46 (mistakes man)
 You can use `exiftool` to extract the thumbnail.
 ```bash
 exiftool -b -ThumbnailImage 2C573 > thumbnail.jpg
@@ -280,18 +271,6 @@ Flag: `flag{s3cr3ts_don'T_stAy_bur13d_L0nG}`
 
 `POINTS : 100`
 
-<<<<<<< HEAD
->We found this video on one of the laptops recovered from Lytton Lab's secret lab area in the boiler room of the old Lytton, IN school building. It is very strange, cryptic, and unsettling.
->
->This video starts as a simple visit to a farm, but it quickly takes a dark turn when the videographer visits an old abandoned house deep in the woods at night with a mysterious companion.
->
->There is a strange figure appearing to convey a secret message. Recover the message and enter it as the flag.
->
->Enter the flag in all caps, with no spaces or punctuation, like this: flag{ALLCAPSNOSPACES}.
->
->Pick one of the following video files based on your bandwidth and processing power. They are the same video with different resolutions. The videos are MP4 H.264 format.
-
-=======
 {{< admonition type=info title="Challenge Description" open=true >}}
 
 We found this video on one of the laptops recovered from Lytton Lab's secret lab area in the boiler room of the old Lytton, IN school building. It is very strange, cryptic, and unsettling.
@@ -308,7 +287,6 @@ Pick one of the following video files based on your bandwidth and processing pow
 {{< /admonition >}}
 
 
->>>>>>> 5573b46 (mistakes man)
 
 This challenge is different from previous challenges since we receive `.mp4` file instead of usual image.
 
