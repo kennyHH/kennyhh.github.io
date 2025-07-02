@@ -1,4 +1,3 @@
-git remote add origin https://github.com/kennyHH/kennyh.github.io.gitimport fs from "node:fs";
 import mdx from "@astrojs/mdx";
 import sitemap from "@astrojs/sitemap";
 import tailwind from "@astrojs/tailwind";
